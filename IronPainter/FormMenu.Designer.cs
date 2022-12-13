@@ -218,12 +218,14 @@
             this.buttonSelection.TabIndex = 17;
             this.buttonSelection.Text = "ВЫБРАТЬ ИЗОБРАЖЕНИЕ";
             this.buttonSelection.UseVisualStyleBackColor = true;
+            this.buttonSelection.Click += new System.EventHandler(this.buttonSelection_Click);
             // 
             // pictureBox
             // 
             this.pictureBox.Location = new System.Drawing.Point(281, 27);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 18;
             this.pictureBox.TabStop = false;
             // 
