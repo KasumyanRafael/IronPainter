@@ -34,5 +34,10 @@ namespace IronPainter
                 }
             }
         }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
