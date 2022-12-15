@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormEditorGameOssetianLoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditorGameOssetianLoto.Designer.cs">
+      <DependentUpon>FormEditorGameOssetianLoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditorGameTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditorGameTrain.Designer.cs">
+      <DependentUpon>FormEditorGameTrain.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -17,27 +17,18 @@ namespace IronPainter
             InitializeComponent();
         }
 
-        private void buttonSelection_Click(object sender, EventArgs e)
+        private void buttonEditorGameTrain_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";    
-            if(ofd.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    pictureBox.Image = new Bitmap(ofd.FileName);
-                }
-                catch 
-                {
-
-                    MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
+            this.Hide();
+            formEditorGameTrain.Show();
         }
 
-        private void FormMenu_Load(object sender, EventArgs e)
+        private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
+            this.Hide();
+            formEditorGameOssetianLoto.Show();
         }
     }
 }
