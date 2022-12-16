@@ -16,5 +16,19 @@ namespace IronPainter
         {
             InitializeComponent();
         }
+
+        private void buttonEditorGameTrain_Click(object sender, EventArgs e)
+        {
+            FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
+            this.Hide();
+            formEditorGameTrain.Show();
+        }
+
+        private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
+        {
+            FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
+            this.Hide();
+            formEditorGameOssetianLoto.Show();
+        }
     }
 }
