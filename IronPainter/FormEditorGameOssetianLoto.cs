@@ -46,5 +46,22 @@ namespace IronPainter
             labelIron.Text = textBoxOssetianWord.Text;
             labelIronWord.Text = textBoxOssetianWord.Text;
         }
+
+        private void buttonReturnToMenu_Click(object sender, EventArgs e)
+        {
+            FormMenu menu = new FormMenu();
+            menu.Show();
+        }
+
+        private void pictureBoxOssetian_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
+        {
+            FormMenu menu=new FormMenu();
+            menu.Show();
+        }
     }
 }

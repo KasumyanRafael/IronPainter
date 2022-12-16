@@ -39,5 +39,17 @@ namespace IronPainter
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           FormMenu menu= new FormMenu();
+            menu.Show();
+        }
+
+        private void buttonReturnToMenu_Click(object sender, EventArgs e)
+        {
+            FormMenu menu = new FormMenu();
+            menu.Show();
+        }
     }
 }
