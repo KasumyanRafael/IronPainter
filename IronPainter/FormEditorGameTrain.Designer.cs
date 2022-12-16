@@ -115,7 +115,7 @@
             // 
             this.textBoxRussianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxRussianWord.Location = new System.Drawing.Point(50, 68);
-            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRussianWord.Name = "textBoxRussianWord";
             this.textBoxRussianWord.Size = new System.Drawing.Size(284, 32);
             this.textBoxRussianWord.TabIndex = 4;
@@ -124,7 +124,7 @@
             // 
             this.textBoxOssetianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxOssetianWord.Location = new System.Drawing.Point(50, 158);
-            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOssetianWord.Name = "textBoxOssetianWord";
             this.textBoxOssetianWord.Size = new System.Drawing.Size(284, 32);
             this.textBoxOssetianWord.TabIndex = 5;
@@ -133,7 +133,7 @@
             // 
             this.textBoxArmenianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxArmenianWord.Location = new System.Drawing.Point(50, 248);
-            this.textBoxArmenianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxArmenianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxArmenianWord.Name = "textBoxArmenianWord";
             this.textBoxArmenianWord.Size = new System.Drawing.Size(284, 32);
             this.textBoxArmenianWord.TabIndex = 6;
@@ -142,7 +142,7 @@
             // 
             this.textBoxGeorgianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxGeorgianWord.Location = new System.Drawing.Point(50, 338);
-            this.textBoxGeorgianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxGeorgianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxGeorgianWord.Name = "textBoxGeorgianWord";
             this.textBoxGeorgianWord.Size = new System.Drawing.Size(284, 32);
             this.textBoxGeorgianWord.TabIndex = 7;
@@ -152,9 +152,9 @@
             this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox.BackColor = System.Drawing.Color.White;
             this.pictureBox.Location = new System.Drawing.Point(50, 237);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(284, 307);
+            this.pictureBox.Size = new System.Drawing.Size(236, 234);
             this.pictureBox.TabIndex = 8;
             this.pictureBox.TabStop = false;
             // 
@@ -163,7 +163,7 @@
             this.buttonSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSelection.Location = new System.Drawing.Point(50, 551);
-            this.buttonSelection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSelection.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelection.Name = "buttonSelection";
             this.buttonSelection.Size = new System.Drawing.Size(284, 49);
             this.buttonSelection.TabIndex = 9;
@@ -176,9 +176,9 @@
             this.pictureBoxOssetian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetian.BackColor = System.Drawing.Color.White;
             this.pictureBoxOssetian.Location = new System.Drawing.Point(314, 68);
-            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxOssetian.Name = "pictureBoxOssetian";
-            this.pictureBoxOssetian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxOssetian.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxOssetian.TabIndex = 21;
             this.pictureBoxOssetian.TabStop = false;
             // 
@@ -187,9 +187,9 @@
             this.pictureBoxRussian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussian.BackColor = System.Drawing.Color.White;
             this.pictureBoxRussian.Location = new System.Drawing.Point(28, 68);
-            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxRussian.Name = "pictureBoxRussian";
-            this.pictureBoxRussian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxRussian.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxRussian.TabIndex = 20;
             this.pictureBoxRussian.TabStop = false;
             // 
@@ -198,9 +198,9 @@
             this.pictureBoxGeorgian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgian.BackColor = System.Drawing.Color.White;
             this.pictureBoxGeorgian.Location = new System.Drawing.Point(885, 68);
-            this.pictureBoxGeorgian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxGeorgian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxGeorgian.Name = "pictureBoxGeorgian";
-            this.pictureBoxGeorgian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxGeorgian.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxGeorgian.TabIndex = 19;
             this.pictureBoxGeorgian.TabStop = false;
             // 
@@ -209,9 +209,9 @@
             this.pictureBoxArmenian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenian.BackColor = System.Drawing.Color.White;
             this.pictureBoxArmenian.Location = new System.Drawing.Point(599, 68);
-            this.pictureBoxArmenian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxArmenian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxArmenian.Name = "pictureBoxArmenian";
-            this.pictureBoxArmenian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxArmenian.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxArmenian.TabIndex = 18;
             this.pictureBoxArmenian.TabStop = false;
             // 
@@ -316,9 +316,9 @@
             this.pictureBoxOssetianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(314, 396);
-            this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxOssetianTrain.Name = "pictureBoxOssetianTrain";
-            this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxOssetianTrain.TabIndex = 29;
             this.pictureBoxOssetianTrain.TabStop = false;
             // 
@@ -327,9 +327,9 @@
             this.pictureBoxRussianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxRussianTrain.Location = new System.Drawing.Point(28, 396);
-            this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxRussianTrain.Name = "pictureBoxRussianTrain";
-            this.pictureBoxRussianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxRussianTrain.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxRussianTrain.TabIndex = 28;
             this.pictureBoxRussianTrain.TabStop = false;
             // 
@@ -338,9 +338,9 @@
             this.pictureBoxGeorgianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(885, 396);
-            this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxGeorgianTrain.Name = "pictureBoxGeorgianTrain";
-            this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxGeorgianTrain.TabIndex = 27;
             this.pictureBoxGeorgianTrain.TabStop = false;
             // 
@@ -349,9 +349,9 @@
             this.pictureBoxArmenianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(599, 396);
-            this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxArmenianTrain.Name = "pictureBoxArmenianTrain";
-            this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(236, 234);
             this.pictureBoxArmenianTrain.TabIndex = 26;
             this.pictureBoxArmenianTrain.TabStop = false;
             // 
@@ -360,7 +360,7 @@
             this.buttonResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonResult.Location = new System.Drawing.Point(84, 515);
-            this.buttonResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(338, 84);
             this.buttonResult.TabIndex = 34;
@@ -372,7 +372,7 @@
             this.buttonSaveResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSaveResult.Location = new System.Drawing.Point(677, 515);
-            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSaveResult.Name = "buttonSaveResult";
             this.buttonSaveResult.Size = new System.Drawing.Size(338, 84);
             this.buttonSaveResult.TabIndex = 35;
@@ -412,7 +412,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEditorGameTrain";
             this.Text = "РЕДАКТОР ИГРЫ \"ПОЕЗД\"";
             this.Load += new System.EventHandler(this.FormEditorGameTrain_Load);

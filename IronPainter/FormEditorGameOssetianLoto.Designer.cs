@@ -174,6 +174,7 @@
             this.buttonResult.TabIndex = 36;
             this.buttonResult.Text = "ПОСМОТРЕТЬ РЕЗУЛЬТАТ";
             this.buttonResult.UseVisualStyleBackColor = true;
+            this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
             // 
             // labelIron
             // 

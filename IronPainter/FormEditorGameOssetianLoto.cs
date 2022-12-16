@@ -39,5 +39,12 @@ namespace IronPainter
                 }
             }
         }
+
+        private void buttonResult_Click(object sender, EventArgs e)
+        {
+            labelRus.Text=textBoxRussianWord.Text;
+            labelIron.Text = textBoxOssetianWord.Text;
+            labelIronWord.Text = textBoxOssetianWord.Text;
+        }
     }
 }
