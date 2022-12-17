@@ -43,40 +43,45 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            string rusword=textBoxRussianWord.Text;
-            string ironword=textBoxOssetianWord.Text;
-            if (pictureBoxMainPicture == null)
-            {
-                MessageBox.Show("Вы не выбрали исходную картинку. Невозможно создать карточки!");
-            }
-            else
-            {
-                pictureBoxRussian.Image = new Bitmap(ofd.FileName);
-                pictureBoxOssetian.Image = new Bitmap(ofd.FileName);
-            }
-            if (rusword=="Русское"&&ironword=="Осетинское")
-            {
-                MessageBox.Show("Вы не вписали слова в поля. Невозможно создать карточки!");
-            }
-            else
-            {
-                labelRus.Text = textBoxRussianWord.Text;
-                labelIron.Text = textBoxOssetianWord.Text;
-                labelIronWord.Text = textBoxOssetianWord.Text;
-                
-            }
+            pictureBoxRussian.Image = new Bitmap(ofd.FileName);
+            pictureBoxOssetian.Image = new Bitmap(ofd.FileName);
+            CreateCard(pictureBoxMainPicture,pictureBoxRussian,textBoxRussianWord,50,190);
+            CreateCard(pictureBoxMainPicture, pictureBoxOssetian, textBoxOssetianWord, 50, 190);
+            CreateWordCard(textBoxOssetianWord,pictureBoxWordWithoutImage);
         }
 
-        private void buttonReturnToMenu_Click(object sender, EventArgs e)
-        {
-            FormMenu menu = new FormMenu();
-            menu.Show();
-        }
 
         private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
         {
             FormMenu menu=new FormMenu();
             menu.Show();
+        }
+        public void CreateCard(PictureBox output,PictureBox input,TextBox txt,int a,int b)
+        {
+            Image img=output.Image;
+            Graphics gr=Graphics.FromImage(img);
+            gr.DrawString(txt.Text,
+            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
+            new SolidBrush(Color.Black), new RectangleF(a, b, 200, 340),
+            new StringFormat(StringFormatFlags.NoWrap));
+            input.Image=img;
+        }
+        public void CreateWordCard(TextBox output,PictureBox input)
+        {
+            input.Image = Properties.Resources.pwhite;
+            Image image=input.Image;
+            Graphics gr= Graphics.FromImage(image);
+            gr.DrawString(output.Text,
+            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
+            new SolidBrush(Color.Black), new RectangleF(50, 100, 200, 340),
+            new StringFormat(StringFormatFlags.NoWrap));
+            input.Image = image;
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

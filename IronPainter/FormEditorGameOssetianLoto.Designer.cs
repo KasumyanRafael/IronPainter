@@ -36,7 +36,7 @@
             this.pictureBoxMainPicture = new System.Windows.Forms.PictureBox();
             this.pictureBoxOssetian = new System.Windows.Forms.PictureBox();
             this.pictureBoxRussian = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWordWithoutSignature = new System.Windows.Forms.PictureBox();
+            this.pictureBoxWordWithoutImage = new System.Windows.Forms.PictureBox();
             this.buttonSaveResult = new System.Windows.Forms.Button();
             this.buttonResult = new System.Windows.Forms.Button();
             this.labelIron = new System.Windows.Forms.Label();
@@ -44,10 +44,11 @@
             this.labelIronWord = new System.Windows.Forms.Label();
             this.buttonReturnToMenu = new System.Windows.Forms.Button();
             this.panelBracket = new System.Windows.Forms.Panel();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordWithoutSignature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordWithoutImage)).BeginInit();
             this.panelBracket.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,16 +140,16 @@
             this.pictureBoxRussian.TabIndex = 24;
             this.pictureBoxRussian.TabStop = false;
             // 
-            // pictureBoxWordWithoutSignature
+            // pictureBoxWordWithoutImage
             // 
-            this.pictureBoxWordWithoutSignature.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxWordWithoutSignature.BackColor = System.Drawing.Color.White;
-            this.pictureBoxWordWithoutSignature.Location = new System.Drawing.Point(779, 12);
-            this.pictureBoxWordWithoutSignature.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxWordWithoutSignature.Name = "pictureBoxWordWithoutSignature";
-            this.pictureBoxWordWithoutSignature.Size = new System.Drawing.Size(236, 234);
-            this.pictureBoxWordWithoutSignature.TabIndex = 28;
-            this.pictureBoxWordWithoutSignature.TabStop = false;
+            this.pictureBoxWordWithoutImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxWordWithoutImage.BackColor = System.Drawing.Color.White;
+            this.pictureBoxWordWithoutImage.Location = new System.Drawing.Point(779, 12);
+            this.pictureBoxWordWithoutImage.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxWordWithoutImage.Name = "pictureBoxWordWithoutImage";
+            this.pictureBoxWordWithoutImage.Size = new System.Drawing.Size(236, 234);
+            this.pictureBoxWordWithoutImage.TabIndex = 28;
+            this.pictureBoxWordWithoutImage.TabStop = false;
             // 
             // buttonSaveResult
             // 
@@ -180,9 +181,9 @@
             this.labelIron.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelIron.BackColor = System.Drawing.Color.White;
             this.labelIron.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIron.Location = new System.Drawing.Point(523, 192);
+            this.labelIron.Location = new System.Drawing.Point(621, 506);
             this.labelIron.Name = "labelIron";
-            this.labelIron.Size = new System.Drawing.Size(236, 50);
+            this.labelIron.Size = new System.Drawing.Size(236, 27);
             this.labelIron.TabIndex = 38;
             this.labelIron.Text = "Осетинская подпись";
             this.labelIron.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,21 +193,21 @@
             this.labelRus.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelRus.BackColor = System.Drawing.Color.White;
             this.labelRus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRus.Location = new System.Drawing.Point(263, 192);
+            this.labelRus.Location = new System.Drawing.Point(361, 506);
             this.labelRus.Name = "labelRus";
-            this.labelRus.Size = new System.Drawing.Size(236, 50);
+            this.labelRus.Size = new System.Drawing.Size(236, 24);
             this.labelRus.TabIndex = 39;
             this.labelRus.Text = "Русская подпись";
             this.labelRus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelIronWord
             // 
-            this.labelIronWord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.labelIronWord.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelIronWord.BackColor = System.Drawing.Color.White;
             this.labelIronWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIronWord.Location = new System.Drawing.Point(779, 105);
+            this.labelIronWord.Location = new System.Drawing.Point(879, 506);
             this.labelIronWord.Name = "labelIronWord";
-            this.labelIronWord.Size = new System.Drawing.Size(236, 50);
+            this.labelIronWord.Size = new System.Drawing.Size(236, 29);
             this.labelIronWord.TabIndex = 40;
             this.labelIronWord.Text = "Осетинское слово";
             this.labelIronWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,25 +227,39 @@
             // panelBracket
             // 
             this.panelBracket.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panelBracket.Controls.Add(this.labelIronWord);
-            this.panelBracket.Controls.Add(this.labelIron);
-            this.panelBracket.Controls.Add(this.labelRus);
             this.panelBracket.Controls.Add(this.pictureBoxOssetian);
             this.panelBracket.Controls.Add(this.pictureBoxRussian);
-            this.panelBracket.Controls.Add(this.pictureBoxWordWithoutSignature);
+            this.panelBracket.Controls.Add(this.pictureBoxWordWithoutImage);
             this.panelBracket.Controls.Add(this.pictureBoxMainPicture);
-            this.panelBracket.Location = new System.Drawing.Point(101, 265);
+            this.panelBracket.Location = new System.Drawing.Point(98, 249);
             this.panelBracket.Name = "panelBracket";
             this.panelBracket.Size = new System.Drawing.Size(1017, 254);
             this.panelBracket.TabIndex = 45;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.Location = new System.Drawing.Point(877, 11);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(179, 84);
+            this.buttonExit.TabIndex = 46;
+            this.buttonExit.Text = "Выход";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormEditorGameOssetianLoto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 632);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.labelIronWord);
             this.Controls.Add(this.buttonReturnToMenu);
+            this.Controls.Add(this.labelIron);
             this.Controls.Add(this.buttonSaveResult);
+            this.Controls.Add(this.labelRus);
             this.Controls.Add(this.buttonResult);
             this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.textBoxOssetianWord);
@@ -259,7 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordWithoutSignature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWordWithoutImage)).EndInit();
             this.panelBracket.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,7 +291,7 @@
         private System.Windows.Forms.PictureBox pictureBoxMainPicture;
         private System.Windows.Forms.PictureBox pictureBoxOssetian;
         private System.Windows.Forms.PictureBox pictureBoxRussian;
-        private System.Windows.Forms.PictureBox pictureBoxWordWithoutSignature;
+        private System.Windows.Forms.PictureBox pictureBoxWordWithoutImage;
         private System.Windows.Forms.Button buttonSaveResult;
         private System.Windows.Forms.Button buttonResult;
         private System.Windows.Forms.Label labelIron;
@@ -284,5 +299,6 @@
         private System.Windows.Forms.Label labelIronWord;
         private System.Windows.Forms.Button buttonReturnToMenu;
         private System.Windows.Forms.Panel panelBracket;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
