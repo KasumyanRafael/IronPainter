@@ -12,6 +12,7 @@ namespace IronPainter
 {
     public partial class FormEditorGameOssetianLoto : Form
     {
+        OpenFileDialog ofd;
         public FormEditorGameOssetianLoto()
         {
             InitializeComponent();
@@ -24,13 +25,13 @@ namespace IronPainter
 
         private void buttonSelection_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
+            ofd = new OpenFileDialog();
             ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    pictureBox.Image = new Bitmap(ofd.FileName);
+                    pictureBoxMainPicture.Image = new Bitmap(ofd.FileName);
                 }
                 catch
                 {
@@ -42,20 +43,34 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            labelRus.Text=textBoxRussianWord.Text;
-            labelIron.Text = textBoxOssetianWord.Text;
-            labelIronWord.Text = textBoxOssetianWord.Text;
+            string rusword=textBoxRussianWord.Text;
+            string ironword=textBoxOssetianWord.Text;
+            if (pictureBoxMainPicture == null)
+            {
+                MessageBox.Show("Вы не выбрали исходную картинку. Невозможно создать карточки!");
+            }
+            else
+            {
+                pictureBoxRussian.Image = new Bitmap(ofd.FileName);
+                pictureBoxOssetian.Image = new Bitmap(ofd.FileName);
+            }
+            if (rusword=="Русское"&&ironword=="Осетинское")
+            {
+                MessageBox.Show("Вы не вписали слова в поля. Невозможно создать карточки!");
+            }
+            else
+            {
+                labelRus.Text = textBoxRussianWord.Text;
+                labelIron.Text = textBoxOssetianWord.Text;
+                labelIronWord.Text = textBoxOssetianWord.Text;
+                
+            }
         }
 
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
             menu.Show();
-        }
-
-        private void pictureBoxOssetian_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonReturnToMenu_Click_1(object sender, EventArgs e)

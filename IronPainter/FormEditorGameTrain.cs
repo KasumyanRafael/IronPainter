@@ -30,7 +30,7 @@ namespace IronPainter
             {
                 try
                 {
-                    pictureBox.Image = new Bitmap(ofd.FileName);
+                    pictureBoxMain.Image = new Bitmap(ofd.FileName);
                 }
                 catch
                 {
@@ -40,16 +40,21 @@ namespace IronPainter
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           FormMenu menu= new FormMenu();
-            menu.Show();
-        }
-
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
             menu.Show();
+        }
+
+        private void buttonResult_Click(object sender, EventArgs e)
+        {
+            pictureBoxArmenianTrain.Image = Properties.Resources.FilledWagon;
+            pictureBoxGeorgianTrain.Image= Properties.Resources.FilledWagon;
+            pictureBoxOssetianTrain.Image=Properties.Resources.FilledWagon;
+            labelOs.Text=textBoxOssetianWord.Text;
+            labelAm.Text=textBoxArmenianWord.Text;
+            labelGe.Text=textBoxGeorgianWord.Text;
+
         }
     }
 }

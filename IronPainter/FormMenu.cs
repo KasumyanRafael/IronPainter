@@ -30,5 +30,10 @@ namespace IronPainter
             this.Hide();
             formEditorGameOssetianLoto.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
