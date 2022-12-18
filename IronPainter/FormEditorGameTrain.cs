@@ -48,11 +48,13 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            TextBox[] words = {textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
-            PictureBox[] pictures = { pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
+            TextBox[] words = {textBoxRussianWord,textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
+            PictureBox[] wagons = {pictureBoxRussianTrain ,pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
+            PictureBox[] pictures = {pictureBoxMain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
             for (int i = 0; i < pictures.Length; i++)
             {
-                CreateWagonCard(words[i],pictures[i]);
+                CreateWagonCard(words[i],wagons[i]);
+                CreateCard(words[i], pictures[i], pictureBoxMain.Image, 50, 190);
             }
         }
         public void CreateWagonCard(TextBox output, PictureBox input)
@@ -61,8 +63,19 @@ namespace IronPainter
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
             gr.DrawString(output.Text,
-            new System.Drawing.Font("Arial", 16, FontStyle.Regular),
+            new System.Drawing.Font("BureauAP", 16, FontStyle.Regular),
             new SolidBrush(Color.Black), new RectangleF(60, 10, 200, 340),
+            new StringFormat(StringFormatFlags.NoWrap));
+            input.Image = image;
+        }
+        public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
+        {
+            input.Image = img;
+            Image image = input.Image;
+            Graphics gr = Graphics.FromImage(image);
+            gr.DrawString(output.Text,
+            new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
+            new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }

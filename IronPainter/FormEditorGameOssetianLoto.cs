@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Text;
 
 namespace IronPainter
 {
@@ -18,7 +19,13 @@ namespace IronPainter
         {
             InitializeComponent();
         }
-
+        PrivateFontCollection font;
+        public void fontsProjects()
+        {
+            //Добавляем шрифт из указанного файла в em.Drawing.Text.PrivateFontCollection
+            this.font = new PrivateFontCollection();
+            this.font.AddFontFile("font/BureauAP.ttf");
+        }
         private void FormEditorGameOssetianLoto_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
@@ -58,7 +65,7 @@ namespace IronPainter
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
             gr.DrawString(output.Text,
-            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
+            new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
             new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
