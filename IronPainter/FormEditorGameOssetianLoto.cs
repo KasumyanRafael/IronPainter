@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,45 +44,42 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            pictureBoxRussian.Image = new Bitmap(ofd.FileName);
-            pictureBoxOssetian.Image = new Bitmap(ofd.FileName);
-            CreateCard(pictureBoxMainPicture,pictureBoxRussian,textBoxRussianWord,50,190);
-            CreateCard(pictureBoxMainPicture, pictureBoxOssetian, textBoxOssetianWord, 50, 190);
-            CreateWordCard(textBoxOssetianWord,pictureBoxWordWithoutImage);
+            TextBox[] words = {textBoxRussianWord,textBoxOssetianWord };
+            PictureBox[]pictures ={pictureBoxRussian,pictureBoxOssetian};
+            for (int i = 0; i < words.Length; i++)
+            {
+                CreateCard(words[i],pictures[i],pictureBoxMainPicture.Image,50,190);
+            }
+            CreateCard(words[1],pictureBoxWordWithoutImage,Properties.Resources.pwhite,50,100);
         }
-
-
+        public void CreateCard(TextBox output, PictureBox input,Image img,int x,int y)
+        {
+            input.Image = img;
+            Image image = input.Image;
+            Graphics gr = Graphics.FromImage(image);
+            gr.DrawString(output.Text,
+            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
+            new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
+            new StringFormat(StringFormatFlags.NoWrap));
+            input.Image = image;
+        }
         private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
         {
             FormMenu menu=new FormMenu();
             menu.Show();
         }
-        public void CreateCard(PictureBox output,PictureBox input,TextBox txt,int a,int b)
-        {
-            Image img=output.Image;
-            Graphics gr=Graphics.FromImage(img);
-            gr.DrawString(txt.Text,
-            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
-            new SolidBrush(Color.Black), new RectangleF(a, b, 200, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image=img;
-        }
-        public void CreateWordCard(TextBox output,PictureBox input)
-        {
-            input.Image = Properties.Resources.pwhite;
-            Image image=input.Image;
-            Graphics gr= Graphics.FromImage(image);
-            gr.DrawString(output.Text,
-            new System.Drawing.Font("Arial", 22, FontStyle.Regular),
-            new SolidBrush(Color.Black), new RectangleF(50, 100, 200, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image = image;
-
-        }
-
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonErasor_Click(object sender, EventArgs e)
+        {
+            PictureBox[] pictures = { pictureBoxRussian, pictureBoxOssetian,pictureBoxWordWithoutImage };
+            for (int i = 0; i < pictures.Length; i++)
+            {
+                pictures[i].Image = null;
+            }
         }
     }
 }

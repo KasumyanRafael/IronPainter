@@ -44,9 +44,11 @@
             this.buttonReturnToMenu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelOs = new System.Windows.Forms.Label();
-            this.labelAm = new System.Windows.Forms.Label();
             this.labelGe = new System.Windows.Forms.Label();
+            this.labelAm = new System.Windows.Forms.Label();
+            this.labelOs = new System.Windows.Forms.Label();
+            this.buttonErasor = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetianTrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgianTrain)).BeginInit();
@@ -189,12 +191,12 @@
             // 
             this.buttonSaveResult.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSaveResult.Location = new System.Drawing.Point(802, 119);
+            this.buttonSaveResult.Location = new System.Drawing.Point(802, 206);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSaveResult.Name = "buttonSaveResult";
             this.buttonSaveResult.Size = new System.Drawing.Size(338, 84);
             this.buttonSaveResult.TabIndex = 35;
-            this.buttonSaveResult.Text = "СОХРАНИТЬ  РЕЗУЛЬТАТ";
+            this.buttonSaveResult.Text = "СОХРАНИТЬ РЕЗУЛЬТАТ";
             this.buttonSaveResult.UseVisualStyleBackColor = true;
             // 
             // buttonReturnToMenu
@@ -222,9 +224,6 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.Controls.Add(this.labelGe);
-            this.panel2.Controls.Add(this.labelAm);
-            this.panel2.Controls.Add(this.labelOs);
             this.panel2.Controls.Add(this.pictureBoxOssetianTrain);
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
@@ -233,47 +232,77 @@
             this.panel2.Size = new System.Drawing.Size(955, 213);
             this.panel2.TabIndex = 38;
             // 
-            // labelOs
+            // labelGe
             // 
-            this.labelOs.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelOs.BackColor = System.Drawing.Color.White;
-            this.labelOs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOs.Location = new System.Drawing.Point(41, 16);
-            this.labelOs.Name = "labelOs";
-            this.labelOs.Size = new System.Drawing.Size(236, 50);
-            this.labelOs.TabIndex = 40;
-            this.labelOs.Text = "Осетинская подпись";
-            this.labelOs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelGe.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelGe.BackColor = System.Drawing.Color.White;
+            this.labelGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelGe.Location = new System.Drawing.Point(777, 600);
+            this.labelGe.Name = "labelGe";
+            this.labelGe.Size = new System.Drawing.Size(236, 35);
+            this.labelGe.TabIndex = 41;
+            this.labelGe.Text = "Грузинский вагон";
+            this.labelGe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelAm
             // 
-            this.labelAm.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelAm.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelAm.BackColor = System.Drawing.Color.White;
             this.labelAm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAm.Location = new System.Drawing.Point(353, 16);
+            this.labelAm.Location = new System.Drawing.Point(459, 600);
             this.labelAm.Name = "labelAm";
-            this.labelAm.Size = new System.Drawing.Size(236, 50);
+            this.labelAm.Size = new System.Drawing.Size(236, 35);
             this.labelAm.TabIndex = 41;
-            this.labelAm.Text = "Армянская подпись";
+            this.labelAm.Text = "Армянский вагон";
             this.labelAm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelGe
+            // labelOs
             // 
-            this.labelGe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelGe.BackColor = System.Drawing.Color.White;
-            this.labelGe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelGe.Location = new System.Drawing.Point(663, 16);
-            this.labelGe.Name = "labelGe";
-            this.labelGe.Size = new System.Drawing.Size(236, 50);
-            this.labelGe.TabIndex = 41;
-            this.labelGe.Text = "Грузинская подпись";
-            this.labelGe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelOs.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelOs.BackColor = System.Drawing.Color.White;
+            this.labelOs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelOs.Location = new System.Drawing.Point(144, 600);
+            this.labelOs.Name = "labelOs";
+            this.labelOs.Size = new System.Drawing.Size(236, 35);
+            this.labelOs.TabIndex = 40;
+            this.labelOs.Text = "Осетинский вагон";
+            this.labelOs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonErasor
+            // 
+            this.buttonErasor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonErasor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonErasor.Location = new System.Drawing.Point(802, 107);
+            this.buttonErasor.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonErasor.Name = "buttonErasor";
+            this.buttonErasor.Size = new System.Drawing.Size(338, 84);
+            this.buttonErasor.TabIndex = 39;
+            this.buttonErasor.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
+            this.buttonErasor.UseVisualStyleBackColor = true;
+            this.buttonErasor.Click += new System.EventHandler(this.buttonErasor_Click);
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.Location = new System.Drawing.Point(252, 11);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(179, 84);
+            this.buttonExit.TabIndex = 47;
+            this.buttonExit.Text = "Выход";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormEditorGameTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1169, 632);
+            this.Controls.Add(this.labelGe);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.labelAm);
+            this.Controls.Add(this.buttonErasor);
+            this.Controls.Add(this.labelOs);
             this.Controls.Add(this.buttonReturnToMenu);
             this.Controls.Add(this.buttonSaveResult);
             this.Controls.Add(this.buttonResult);
@@ -319,5 +348,7 @@
         private System.Windows.Forms.Label labelGe;
         private System.Windows.Forms.Label labelAm;
         private System.Windows.Forms.Label labelOs;
+        private System.Windows.Forms.Button buttonErasor;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

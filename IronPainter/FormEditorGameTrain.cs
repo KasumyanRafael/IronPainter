@@ -48,13 +48,36 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            pictureBoxArmenianTrain.Image = Properties.Resources.FilledWagon;
-            pictureBoxGeorgianTrain.Image= Properties.Resources.FilledWagon;
-            pictureBoxOssetianTrain.Image=Properties.Resources.FilledWagon;
-            labelOs.Text=textBoxOssetianWord.Text;
-            labelAm.Text=textBoxArmenianWord.Text;
-            labelGe.Text=textBoxGeorgianWord.Text;
+            TextBox[] words = {textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
+            PictureBox[] pictures = { pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
+            for (int i = 0; i < pictures.Length; i++)
+            {
+                CreateWagonCard(words[i],pictures[i]);
+            }
+        }
+        public void CreateWagonCard(TextBox output, PictureBox input)
+        {
+            input.Image = Properties.Resources.FilledWagon;
+            Image image = input.Image;
+            Graphics gr = Graphics.FromImage(image);
+            gr.DrawString(output.Text,
+            new System.Drawing.Font("Arial", 16, FontStyle.Regular),
+            new SolidBrush(Color.Black), new RectangleF(60, 10, 200, 340),
+            new StringFormat(StringFormatFlags.NoWrap));
+            input.Image = image;
+        }
+        private void buttonErasor_Click(object sender, EventArgs e)
+        {
+            PictureBox[] pictures = {pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain };
+            for (int i = 0; i < pictures.Length; i++)
+            {
+                pictures[i].Image = null;
+            }
+        }
 
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
