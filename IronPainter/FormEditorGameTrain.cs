@@ -81,7 +81,7 @@ namespace IronPainter
         }
         private void buttonErasor_Click(object sender, EventArgs e)
         {
-            PictureBox[] pictures = {pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain };
+            PictureBox[] pictures = {pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian,pictureBoxRussianTrain,pictureBoxMain};
             for (int i = 0; i < pictures.Length; i++)
             {
                 pictures[i].Image = null;
