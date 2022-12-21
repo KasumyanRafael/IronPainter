@@ -161,6 +161,7 @@
             this.buttonSaveResult.TabIndex = 37;
             this.buttonSaveResult.Text = "СОХРАНИТЬ РЕЗУЛЬТАТ";
             this.buttonSaveResult.UseVisualStyleBackColor = true;
+            this.buttonSaveResult.Click += new System.EventHandler(this.buttonSaveResult_Click);
             // 
             // buttonResult
             // 

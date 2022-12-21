@@ -88,5 +88,10 @@ namespace IronPainter
                 pictures[i].Image = null;
             }
         }
+
+        private void buttonSaveResult_Click(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory("Новая папка");
+        }
     }
 }
