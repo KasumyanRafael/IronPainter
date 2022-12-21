@@ -96,8 +96,15 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
+            Directory.CreateDirectory("Новая папка Поезд");
+            string filename = "file.png";
+            string path = Directory.GetCurrentDirectory();
+            if (!Directory.Exists(path + "/Новая папка Поезд"))
+            {
+                Directory.CreateDirectory(path + "/Новая папка Поезд");
+            }
+            File.Create(path + "/Новая папка Поезд/" + filename);
             MessageBox.Show("Всё успешно сохранено");
-            Directory.CreateDirectory("Новая папка Train");
         }
     }
 }
