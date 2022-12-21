@@ -91,7 +91,8 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
-            Directory.CreateDirectory("Новая папка");
+            MessageBox.Show("Всё успешно сохранено");
+            Directory.CreateDirectory("Новая папка Лото");
         }
     }
 }

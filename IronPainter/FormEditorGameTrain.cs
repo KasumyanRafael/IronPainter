@@ -92,5 +92,11 @@ namespace IronPainter
         {
             Application.Exit();
         }
+
+        private void buttonSaveResult_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Всё успешно сохранено");
+            Directory.CreateDirectory("Новая папка Train");
+        }
     }
 }
