@@ -88,5 +88,11 @@ namespace IronPainter
                 pictures[i].Image = null;
             }
         }
+
+        private void buttonSaveResult_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Всё успешно сохранено");
+            Directory.CreateDirectory("Новая папка Лото");
+        }
     }
 }
