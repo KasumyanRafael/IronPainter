@@ -91,15 +91,35 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
-            Directory.CreateDirectory("Новая папка Лото");
-            string filename = "file1.png";
-            string path = Directory.GetCurrentDirectory();
-            if (!Directory.Exists(path + "/Новая папка Лото"))
+            StreamWriter[] files=new StreamWriter[4];
+            int f = 1;
+            for (int i = 0; i < 4; i++)
             {
-                Directory.CreateDirectory(path + "/Новая папка Лото");
+                string filename = String.Format("p{1}type{0}Loto.bmp", i, f);
+                string foldername = String.Format("p{0}Loto", f);
+                CreateDirectory(filename, foldername);
             }
-            File.Create(path + "/Новая папка Лото/" + filename);
             MessageBox.Show("Всё успешно сохранено");
+            PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
+            
+        }
+        public void CreateDirectory(string name,string foldername)
+        {
+            Directory.CreateDirectory(foldername);
+            string filename = name;
+            string path = Directory.GetCurrentDirectory();
+            if (!Directory.Exists(path + String.Format("/{0}",foldername)))
+            {
+                Directory.CreateDirectory(path + String.Format("/{0}", foldername));
+            }
+            File.Create(path + String.Format("/{0}/", foldername) + filename);
+        }
+        public void FillFiles(PictureBox[]pictures,StreamWriter[]files)
+        {
+            for (int i = 0; i < files.Length; i++)
+            {
+                files[i].WriteLine(pictures[i].Image);
+            }
         }
     }
 }
