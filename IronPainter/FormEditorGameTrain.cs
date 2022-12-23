@@ -64,8 +64,8 @@ namespace IronPainter
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
             gr.DrawString(output.Text,
-            new System.Drawing.Font("BureauAP", 16, FontStyle.Regular),
-            new SolidBrush(Color.Black), new RectangleF(60, 10, 200, 340),
+            new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
+            new SolidBrush(Color.White), new RectangleF(370, 250, 1100, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }

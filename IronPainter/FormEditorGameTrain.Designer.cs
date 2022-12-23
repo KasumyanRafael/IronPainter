@@ -161,6 +161,7 @@
             this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxOssetianTrain.Name = "pictureBoxOssetianTrain";
             this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(368, 217);
+            this.pictureBoxOssetianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxOssetianTrain.TabIndex = 29;
             this.pictureBoxOssetianTrain.TabStop = false;
             // 
@@ -172,6 +173,7 @@
             this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxGeorgianTrain.Name = "pictureBoxGeorgianTrain";
             this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(368, 217);
+            this.pictureBoxGeorgianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxGeorgianTrain.TabIndex = 27;
             this.pictureBoxGeorgianTrain.TabStop = false;
             // 
@@ -183,6 +185,7 @@
             this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxArmenianTrain.Name = "pictureBoxArmenianTrain";
             this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(368, 217);
+            this.pictureBoxArmenianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxArmenianTrain.TabIndex = 26;
             this.pictureBoxArmenianTrain.TabStop = false;
             // 
@@ -237,7 +240,7 @@
             this.panel1.Controls.Add(this.buttonSelection);
             this.panel1.Controls.Add(this.pictureBoxMain);
             this.panel1.Location = new System.Drawing.Point(513, 129);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1309, 414);
             this.panel1.TabIndex = 37;
@@ -335,7 +338,7 @@
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
             this.panel2.Location = new System.Drawing.Point(107, 550);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1627, 262);
             this.panel2.TabIndex = 38;
@@ -348,6 +351,7 @@
             this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxRussianTrain.Name = "pictureBoxRussianTrain";
             this.pictureBoxRussianTrain.Size = new System.Drawing.Size(368, 217);
+            this.pictureBoxRussianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxRussianTrain.TabIndex = 30;
             this.pictureBoxRussianTrain.TabStop = false;
             // 
