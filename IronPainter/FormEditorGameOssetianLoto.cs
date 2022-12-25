@@ -51,15 +51,15 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            TextBox[] words = {textBoxRussianWord,textBoxOssetianWord };
-            PictureBox[]pictures ={pictureBoxRussian,pictureBoxOssetian};
+            TextBox[] words = { textBoxRussianWord, textBoxOssetianWord };
+            PictureBox[] pictures = { pictureBoxRussian, pictureBoxOssetian };
             for (int i = 0; i < words.Length; i++)
             {
-                CreateCard(words[i],pictures[i],pictureBoxMainPicture.Image,50,190);
+                CreateCard(words[i], pictures[i], pictureBoxMainPicture.Image, 50, 190);
             }
-            CreateCard(words[1],pictureBoxWordWithoutImage,Properties.Resources.pwhite,50,100);
+            CreateCard(words[1], pictureBoxWordWithoutImage, Properties.Resources.pwhite, 50, 100);
         }
-        public void CreateCard(TextBox output, PictureBox input,Image img,int x,int y)
+        public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
         {
             input.Image = img;
             Image image = input.Image;
@@ -72,7 +72,7 @@ namespace IronPainter
         }
         private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
         {
-            FormMenu menu=new FormMenu();
+            FormMenu menu = new FormMenu();
             menu.Show();
         }
         private void buttonExit_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace IronPainter
 
         private void buttonErasor_Click(object sender, EventArgs e)
         {
-            PictureBox[] pictures = { pictureBoxRussian, pictureBoxOssetian,pictureBoxWordWithoutImage };
+            PictureBox[] pictures = { pictureBoxMainPicture,pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
             for (int i = 0; i < pictures.Length; i++)
             {
                 pictures[i].Image = null;
@@ -91,35 +91,17 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
-            /*StreamWriter[] files=new StreamWriter[4];
-            int f = 1;
-            for (int i = 0; i < 4; i++)
-            {
-                string filename = String.Format("p{1}type{0}Loto.bmp", i, f);
-                string foldername = String.Format("p{0}Loto", f);
-                CreateDirectory(filename, foldername);
-            }
-            PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };*/
-            int f = 6;
-            PictureBox[] pictures = {pictureBoxMainPicture, pictureBoxRussian,pictureBoxOssetian, pictureBoxWordWithoutImage };
-            for (int i = 0; i < 4; i++)
-            {
-                StreamWriter file = new StreamWriter(String.Format("p{1}type{0}Loto.bmp", i, f));
-                pictures[i].Image.Save("c:\\"+String.Format("p{1}type{0}Loto.bmp", i, f));
-            }
-            MessageBox.Show("Всё успешно сохранено");
-
+            PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
+            SaveImages(pictures,6);
+            MessageBox.Show("Всё успешно сохранено!");
         }
-        /*public void CreateDirectory(string name,string foldername)
+        public void SaveImages(PictureBox[] pictures,int num)
         {
-            Directory.CreateDirectory(foldername);
-            string filename = name;
-            string path = Directory.GetCurrentDirectory();
-            if (!Directory.Exists(path + String.Format("/{0}",foldername)))
+            for (int i = 0; i < pictures.Length; i++)
             {
-                Directory.CreateDirectory(path + String.Format("/{0}", foldername));
+                string filename = String.Format("p{0}type{1}Loto.bmp",num,i);
+                pictures[i].Image.Save(filename);
             }
-            File.Create(path + String.Format("/{0}/", foldername) + filename);
-        }*/
+        }
     }
 }

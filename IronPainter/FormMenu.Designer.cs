@@ -31,14 +31,14 @@
             this.buttonEditorGameOssetianLoto = new System.Windows.Forms.Button();
             this.buttonEditorGameTrain = new System.Windows.Forms.Button();
             this.buttonMyCards = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonEditorGameOssetianLoto
             // 
             this.buttonEditorGameOssetianLoto.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEditorGameOssetianLoto.Location = new System.Drawing.Point(28, 131);
-            this.buttonEditorGameOssetianLoto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEditorGameOssetianLoto.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditorGameOssetianLoto.Name = "buttonEditorGameOssetianLoto";
             this.buttonEditorGameOssetianLoto.Size = new System.Drawing.Size(326, 73);
             this.buttonEditorGameOssetianLoto.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             this.buttonEditorGameTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonEditorGameTrain.Location = new System.Drawing.Point(28, 31);
-            this.buttonEditorGameTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEditorGameTrain.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditorGameTrain.Name = "buttonEditorGameTrain";
             this.buttonEditorGameTrain.Size = new System.Drawing.Size(326, 73);
             this.buttonEditorGameTrain.TabIndex = 1;
@@ -62,31 +62,31 @@
             // 
             this.buttonMyCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonMyCards.Location = new System.Drawing.Point(28, 231);
-            this.buttonMyCards.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonMyCards.Margin = new System.Windows.Forms.Padding(2);
             this.buttonMyCards.Name = "buttonMyCards";
             this.buttonMyCards.Size = new System.Drawing.Size(326, 73);
             this.buttonMyCards.TabIndex = 2;
             this.buttonMyCards.Text = "МОИ КАРТОЧКИ";
             this.buttonMyCards.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonExit
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(28, 327);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(326, 73);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ВЫХОД";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.Location = new System.Drawing.Point(28, 327);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(326, 73);
+            this.buttonExit.TabIndex = 3;
+            this.buttonExit.Text = "ВЫХОД";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 425);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonMyCards);
             this.Controls.Add(this.buttonEditorGameTrain);
             this.Controls.Add(this.buttonEditorGameOssetianLoto);
@@ -101,7 +101,7 @@
         private System.Windows.Forms.Button buttonEditorGameOssetianLoto;
         private System.Windows.Forms.Button buttonEditorGameTrain;
         private System.Windows.Forms.Button buttonMyCards;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 
