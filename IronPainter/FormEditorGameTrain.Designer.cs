@@ -213,6 +213,7 @@
             this.buttonSaveResult.TabIndex = 35;
             this.buttonSaveResult.Text = "СОХРАНИТЬ ";
             this.buttonSaveResult.UseVisualStyleBackColor = true;
+            this.buttonSaveResult.Click += new System.EventHandler(this.buttonSaveResult_Click);
             // 
             // buttonReturnToMenu
             // 

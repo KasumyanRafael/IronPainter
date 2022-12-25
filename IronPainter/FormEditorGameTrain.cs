@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,6 +92,12 @@ namespace IronPainter
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonSaveResult_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Всё успешно сохранено");
+            Directory.CreateDirectory("Новая папка Train");
         }
     }
 }
