@@ -97,9 +97,11 @@ namespace IronPainter
         }
         public void SaveImages(PictureBox[] pictures,int num)
         {
+            List<string>filenames = new List<string>();
             for (int i = 0; i < pictures.Length; i++)
             {
                 string filename = String.Format("p{0}type{1}Loto.bmp",num,i);
+                filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }
         }
