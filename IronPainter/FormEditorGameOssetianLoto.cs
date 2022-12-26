@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
+using System.IO.Compression;
 
 namespace IronPainter
 {
@@ -47,6 +48,7 @@ namespace IronPainter
                     MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            if(pictureBoxMainPicture.Image != null) buttonResult.Enabled = true;
         }
 
         private void buttonResult_Click(object sender, EventArgs e)
@@ -58,6 +60,19 @@ namespace IronPainter
                 CreateCard(words[i], pictures[i], pictureBoxMainPicture.Image, 50, 190);
             }
             CreateCard(words[1], pictureBoxWordWithoutImage, Properties.Resources.pwhite, 50, 100);
+            if(IsFilled(pictures,pictureBoxWordWithoutImage))
+            {
+                buttonSaveResult.Enabled = true;
+            }
+        }
+        public bool IsFilled(PictureBox[]pictures,PictureBox picture)
+        {
+            for (int i = 0; i < pictures.Length; i++)
+            {
+                if (pictures[i].Image != null && picture.Image != null)
+                    return true;
+            }
+            return false;
         }
         public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
         {
@@ -69,6 +84,7 @@ namespace IronPainter
             new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
+            gr = null;
         }
         private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
         {
@@ -87,11 +103,13 @@ namespace IronPainter
             {
                 pictures[i].Image = null;
             }
+            buttonSaveResult.Enabled = false;
+            buttonResult.Enabled = false;
         }
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
-            PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
+            PictureBox[] pictures = { pictureBoxMainPicture,pictureBoxRussian,pictureBoxOssetian,pictureBoxWordWithoutImage };
             SaveImages(pictures,6);
             MessageBox.Show("Всё успешно сохранено!");
         }
@@ -105,5 +123,6 @@ namespace IronPainter
                 pictures[i].Image.Save(filename);
             }
         }
+
     }
 }

@@ -153,6 +153,7 @@
             // buttonSaveResult
             // 
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonSaveResult.Enabled = false;
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSaveResult.Location = new System.Drawing.Point(784, 537);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
@@ -166,6 +167,7 @@
             // buttonResult
             // 
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonResult.Enabled = false;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonResult.Location = new System.Drawing.Point(256, 537);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
