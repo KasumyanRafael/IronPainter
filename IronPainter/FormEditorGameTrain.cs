@@ -98,8 +98,7 @@ namespace IronPainter
         {
             MessageBox.Show("Всё успешно сохранено");
             Directory.CreateDirectory("Новая папка Train");
+            
         }
-
-      
     }
 }
