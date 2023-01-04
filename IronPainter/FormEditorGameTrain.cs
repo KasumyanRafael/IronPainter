@@ -13,6 +13,7 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrain : Form
     {
+        OpenFileDialog ofd;
         public FormEditorGameTrain()
         {
             InitializeComponent();
@@ -23,40 +24,10 @@ namespace IronPainter
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void buttonSelection_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    pictureBoxMain.Image = new Bitmap(ofd.FileName);
-                }
-                catch
-                {
-
-                    MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
             FormMenu menu = new FormMenu();
             menu.Show();
-        }
-
-        private void buttonResult_Click(object sender, EventArgs e)
-        {
-            TextBox[] words = {textBoxRussianWord,textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
-            PictureBox[] wagons = {pictureBoxRussianTrain ,pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
-            PictureBox[] pictures = {pictureBoxMain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
-            for (int i = 0; i < pictures.Length; i++)
-            {
-                CreateWagonCard(words[i],wagons[i]);
-                CreateCard(words[i], pictures[i], pictureBoxMain.Image, 50, 190);
-            }
         }
         public void CreateWagonCard(TextBox output, PictureBox input)
         {
@@ -80,14 +51,6 @@ namespace IronPainter
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
-        private void buttonErasor_Click(object sender, EventArgs e)
-        {
-            PictureBox[] pictures = {pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian,pictureBoxRussianTrain,pictureBoxMain};
-            for (int i = 0; i < pictures.Length; i++)
-            {
-                pictures[i].Image = null;
-            }
-        }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
@@ -98,6 +61,42 @@ namespace IronPainter
         {
             MessageBox.Show("Всё успешно сохранено");
             Directory.CreateDirectory("Новая папка Train");
+        }
+
+        private void buttonExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonReturnToMenu_Click_1(object sender, EventArgs e)
+        {
+            FormMenu frm=new FormMenu();
+            frm.Show();
+        }
+
+        private void buttonSelection_Click(object sender, EventArgs e)
+        {
+            ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    pictureBoxMainPicture.Image = new Bitmap(ofd.FileName);
+                }
+                catch
+                {
+
+                    MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            if (pictureBoxMainPicture.Image != null) buttonResult.Enabled = true;
+        }
+
+        private void buttonResult_Click(object sender, EventArgs e)
+        {
+            FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
+            frm.Show();
         }
     }
 }

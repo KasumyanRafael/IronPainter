@@ -11,3 +11,4 @@ C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\I
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.pdb
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameOssetianLoto.resources
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrain.resources
+C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrainResults.resources
