@@ -13,6 +13,9 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrain : Form
     {
+        public TextBox[] words;
+        public PictureBox[] wagons;
+        public PictureBox[] pictures;
         public FormEditorGameTrain()
         {
             InitializeComponent();
@@ -25,20 +28,7 @@ namespace IronPainter
 
         private void buttonSelection_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    pictureBoxMain.Image = new Bitmap(ofd.FileName);
-                }
-                catch
-                {
-
-                    MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            
         }
 
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
@@ -49,44 +39,16 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            TextBox[] words = {textBoxRussianWord,textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
-            PictureBox[] wagons = {pictureBoxRussianTrain ,pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
-            PictureBox[] pictures = {pictureBoxMain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
-            for (int i = 0; i < pictures.Length; i++)
-            {
-                CreateWagonCard(words[i],wagons[i]);
-                CreateCard(words[i], pictures[i], pictureBoxMain.Image, 50, 190);
-            }
+            FormEditorGameTrainResults formEditorGameTrainResults = new FormEditorGameTrainResults();
+            this.Hide();
+            formEditorGameTrainResults.Show();
+            words = new TextBox[4]{textBoxRussianWord,textBoxOssetianWord, textBoxArmenianWord,textBoxGeorgianWord};
+           
         }
-        public void CreateWagonCard(TextBox output, PictureBox input)
-        {
-            input.Image = Properties.Resources.FilledWagon;
-            Image image = input.Image;
-            Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
-            new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
-            new SolidBrush(Color.White), new RectangleF(370, 250, 1100, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image = image;
-        }
-        public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
-        {
-            input.Image = img;
-            Image image = input.Image;
-            Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
-            new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
-            new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image = image;
-        }
+        
         private void buttonErasor_Click(object sender, EventArgs e)
         {
-            PictureBox[] pictures = {pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian,pictureBoxRussianTrain,pictureBoxMain};
-            for (int i = 0; i < pictures.Length; i++)
-            {
-                pictures[i].Image = null;
-            }
+            
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -100,6 +62,27 @@ namespace IronPainter
             Directory.CreateDirectory("Новая папка Train");
         }
 
-      
+        private void textBoxRussianWord_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSelection_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    pictureBox.Image = new Bitmap(ofd.FileName);
+                }
+                catch
+                {
+
+                    MessageBox.Show("Невозможно выбрать данный файл", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
