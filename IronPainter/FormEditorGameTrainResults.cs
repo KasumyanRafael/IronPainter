@@ -43,7 +43,7 @@ namespace IronPainter
 
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
-            FormMenu frm=new FormMenu();
+            FormEditorGameTrain frm=new FormEditorGameTrain();
             frm.Show();
             this.Hide();
         }
@@ -55,6 +55,7 @@ namespace IronPainter
 
         private void FormEditorGameTrainResults_Load(object sender, EventArgs e)
         {
+            
             this.WindowState = FormWindowState.Maximized;
         }
 
@@ -63,8 +64,11 @@ namespace IronPainter
             pictureBoxMain.Image = mainImg;
             PictureBox[] cards = {pictureBoxRussian,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
             PictureBox[] wagons = {pictureBoxRussianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
-            CreateCard(signs[0],cards[0],mainImg,50,190);
-            CreateWagonCard(signs[0], cards[0]);
+            for (int i = 0; i < cards.Length; i++)
+            {
+                CreateWagonCard(signs[i], wagons[i]);
+                CreateCard(signs[i], cards[i], pictureBoxMain.Image, 50, 190);
+            }
         }
     }
 }
