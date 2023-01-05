@@ -63,7 +63,7 @@ namespace IronPainter
         {
             pictureBoxMain.Image = mainImg;
             PictureBox[] cards = {pictureBoxRussian,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
-            PictureBox[] wagons = {pictureBoxRussianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
+            PictureBox[] wagons = {pictureBoxRussianTrain,pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain };
             for (int i = 0; i < cards.Length; i++)
             {
                 CreateWagonCard(signs[i], wagons[i]);
