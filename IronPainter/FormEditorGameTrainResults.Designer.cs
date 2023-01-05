@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonErasor = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -71,7 +70,7 @@
             // 
             this.buttonExit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonExit.Location = new System.Drawing.Point(21, 437);
+            this.buttonExit.Location = new System.Drawing.Point(21, 326);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(322, 84);
@@ -79,18 +78,6 @@
             this.buttonExit.Text = "ВЫХОД";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // buttonErasor
-            // 
-            this.buttonErasor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonErasor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonErasor.Location = new System.Drawing.Point(21, 328);
-            this.buttonErasor.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonErasor.Name = "buttonErasor";
-            this.buttonErasor.Size = new System.Drawing.Size(322, 84);
-            this.buttonErasor.TabIndex = 58;
-            this.buttonErasor.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
-            this.buttonErasor.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -204,12 +191,12 @@
             // 
             this.buttonReturnToMenu.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonReturnToMenu.Location = new System.Drawing.Point(21, 12);
+            this.buttonReturnToMenu.Location = new System.Drawing.Point(21, 9);
             this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReturnToMenu.Name = "buttonReturnToMenu";
             this.buttonReturnToMenu.Size = new System.Drawing.Size(322, 84);
             this.buttonReturnToMenu.TabIndex = 57;
-            this.buttonReturnToMenu.Text = "<<< НАЗАД";
+            this.buttonReturnToMenu.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
             this.buttonReturnToMenu.UseVisualStyleBackColor = true;
             this.buttonReturnToMenu.Click += new System.EventHandler(this.buttonReturnToMenu_Click);
             // 
@@ -325,7 +312,7 @@
             // 
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonSaveResult.Location = new System.Drawing.Point(21, 223);
+            this.buttonSaveResult.Location = new System.Drawing.Point(21, 220);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSaveResult.Name = "buttonSaveResult";
             this.buttonSaveResult.Size = new System.Drawing.Size(322, 84);
@@ -337,7 +324,7 @@
             // 
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonResult.Location = new System.Drawing.Point(21, 121);
+            this.buttonResult.Location = new System.Drawing.Point(21, 118);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(322, 84);
@@ -351,12 +338,11 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel3.Controls.Add(this.buttonExit);
             this.panel3.Controls.Add(this.buttonReturnToMenu);
-            this.panel3.Controls.Add(this.buttonErasor);
             this.panel3.Controls.Add(this.buttonResult);
             this.panel3.Controls.Add(this.buttonSaveResult);
             this.panel3.Location = new System.Drawing.Point(999, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(353, 590);
+            this.panel3.Size = new System.Drawing.Size(353, 585);
             this.panel3.TabIndex = 60;
             // 
             // pictureBoxMain
@@ -403,7 +389,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonErasor;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;

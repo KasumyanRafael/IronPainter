@@ -20,8 +20,7 @@ namespace IronPainter
         }
         public void CreateWagonCard(string output, PictureBox input)
         {
-            input.Image = Properties.Resources.FilledWagon;
-            Image image = input.Image;
+            Image image = Properties.Resources.FilledWagon;
             Graphics gr = Graphics.FromImage(image);
             gr.DrawString(output,
             new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
@@ -62,12 +61,12 @@ namespace IronPainter
         private void buttonResult_Click(object sender, EventArgs e)
         {
             pictureBoxMain.Image = mainImg;
-            PictureBox[] cards = {pictureBoxRussian,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
-            PictureBox[] wagons = {pictureBoxRussianTrain,pictureBoxOssetianTrain,pictureBoxArmenianTrain,pictureBoxGeorgianTrain };
-            for (int i = 0; i < cards.Length; i++)
+            PictureBox[] wagons = { pictureBoxRussianTrain, pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
+            PictureBox[] pictures = { pictureBoxRussian, pictureBoxOssetian, pictureBoxArmenian, pictureBoxGeorgian };
+            for (int i = 0; i < pictures.Length; i++)
             {
+                CreateCard(signs[i], pictures[i], pictureBoxMain.Image, 50, 190);
                 CreateWagonCard(signs[i], wagons[i]);
-                CreateCard(signs[i], cards[i], pictureBoxMain.Image, 50, 185);
             }
         }
     }
