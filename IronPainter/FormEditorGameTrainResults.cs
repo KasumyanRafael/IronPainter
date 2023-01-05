@@ -67,7 +67,7 @@ namespace IronPainter
             for (int i = 0; i < cards.Length; i++)
             {
                 CreateWagonCard(signs[i], wagons[i]);
-                CreateCard(signs[i], cards[i], pictureBoxMain.Image, 50, 190);
+                CreateCard(signs[i], cards[i], pictureBoxMain.Image, 50, 185);
             }
         }
     }

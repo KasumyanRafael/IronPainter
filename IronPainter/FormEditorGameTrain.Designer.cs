@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonSelection = new System.Windows.Forms.Button();
-            this.pictureBoxMainPicture = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRussianWord = new System.Windows.Forms.TextBox();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -41,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxMainPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,16 +55,6 @@
             this.buttonSelection.Text = "ВЫБЕРИТЕ ИЗОБРАЖЕНИЕ";
             this.buttonSelection.UseVisualStyleBackColor = true;
             this.buttonSelection.Click += new System.EventHandler(this.buttonSelection_Click);
-            // 
-            // pictureBoxMainPicture
-            // 
-            this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
-            this.pictureBoxMainPicture.Location = new System.Drawing.Point(491, 112);
-            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBoxMainPicture.Name = "pictureBoxMainPicture";
-            this.pictureBoxMainPicture.Size = new System.Drawing.Size(284, 307);
-            this.pictureBoxMainPicture.TabIndex = 64;
-            this.pictureBoxMainPicture.TabStop = false;
             // 
             // label1
             // 
@@ -182,13 +172,24 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "введите слово на осетинском языке";
             // 
+            // pictureBoxMainPicture
+            // 
+            this.pictureBoxMainPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
+            this.pictureBoxMainPicture.Location = new System.Drawing.Point(534, 152);
+            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMainPicture.Name = "pictureBoxMainPicture";
+            this.pictureBoxMainPicture.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxMainPicture.TabIndex = 66;
+            this.pictureBoxMainPicture.TabStop = false;
+            // 
             // FormEditorGameTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(806, 563);
-            this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.pictureBoxMainPicture);
+            this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxRussianWord);
             this.Controls.Add(this.buttonExit);
@@ -212,7 +213,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonSelection;
-        private System.Windows.Forms.PictureBox pictureBoxMainPicture;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxRussianWord;
         private System.Windows.Forms.Button buttonExit;
@@ -224,5 +224,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.PictureBox pictureBoxMainPicture;
     }
 }

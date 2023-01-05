@@ -103,7 +103,7 @@
             this.panel2.Controls.Add(this.pictureBoxRussianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
-            this.panel2.Location = new System.Drawing.Point(12, 563);
+            this.panel2.Location = new System.Drawing.Point(12, 578);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(956, 271);
             this.panel2.TabIndex = 54;
@@ -160,10 +160,10 @@
             // 
             this.pictureBoxOssetianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(253, 15);
+            this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(253, 2);
             this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxOssetianTrain.Name = "pictureBoxOssetianTrain";
-            this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(188, 216);
             this.pictureBoxOssetianTrain.TabIndex = 37;
             this.pictureBoxOssetianTrain.TabStop = false;
             // 
@@ -171,10 +171,10 @@
             // 
             this.pictureBoxRussianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxRussianTrain.Location = new System.Drawing.Point(16, 15);
+            this.pictureBoxRussianTrain.Location = new System.Drawing.Point(16, 2);
             this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxRussianTrain.Name = "pictureBoxRussianTrain";
-            this.pictureBoxRussianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxRussianTrain.Size = new System.Drawing.Size(188, 216);
             this.pictureBoxRussianTrain.TabIndex = 36;
             this.pictureBoxRussianTrain.TabStop = false;
             // 
@@ -182,10 +182,10 @@
             // 
             this.pictureBoxGeorgianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(725, 15);
+            this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(725, 2);
             this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxGeorgianTrain.Name = "pictureBoxGeorgianTrain";
-            this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(188, 216);
             this.pictureBoxGeorgianTrain.TabIndex = 35;
             this.pictureBoxGeorgianTrain.TabStop = false;
             // 
@@ -193,10 +193,10 @@
             // 
             this.pictureBoxArmenianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(489, 15);
+            this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(489, 2);
             this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxArmenianTrain.Name = "pictureBoxArmenianTrain";
-            this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(188, 216);
             this.pictureBoxArmenianTrain.TabIndex = 34;
             this.pictureBoxArmenianTrain.TabStop = false;
             // 
@@ -237,9 +237,9 @@
             this.label1.Location = new System.Drawing.Point(483, 227);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 20);
+            this.label1.Size = new System.Drawing.Size(182, 20);
             this.label1.TabIndex = 41;
-            this.label1.Text = "вагон со словом на армянском языке";
+            this.label1.Text = "армянская картинка";
             // 
             // label2
             // 
@@ -249,9 +249,9 @@
             this.label2.Location = new System.Drawing.Point(722, 227);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(328, 20);
+            this.label2.Size = new System.Drawing.Size(185, 20);
             this.label2.TabIndex = 40;
-            this.label2.Text = "вагон со словом на грузинском языке";
+            this.label2.Text = "грузинская картинка";
             // 
             // label3
             // 
@@ -261,9 +261,9 @@
             this.label3.Location = new System.Drawing.Point(250, 227);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(332, 20);
+            this.label3.Size = new System.Drawing.Size(189, 20);
             this.label3.TabIndex = 39;
-            this.label3.Text = "вагон со словом на осетинском языке";
+            this.label3.Text = "осетинская картинка";
             // 
             // label4
             // 
@@ -273,18 +273,18 @@
             this.label4.Location = new System.Drawing.Point(15, 227);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(300, 20);
+            this.label4.Size = new System.Drawing.Size(157, 20);
             this.label4.TabIndex = 38;
-            this.label4.Text = "вагон со словом на русском языке";
+            this.label4.Text = "русская картинка";
             // 
             // pictureBoxOssetian
             // 
             this.pictureBoxOssetian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxOssetian.Location = new System.Drawing.Point(253, 16);
+            this.pictureBoxOssetian.Location = new System.Drawing.Point(253, 8);
             this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxOssetian.Name = "pictureBoxOssetian";
-            this.pictureBoxOssetian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxOssetian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxOssetian.TabIndex = 37;
             this.pictureBoxOssetian.TabStop = false;
             // 
@@ -292,10 +292,10 @@
             // 
             this.pictureBoxRussian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxRussian.Location = new System.Drawing.Point(16, 16);
+            this.pictureBoxRussian.Location = new System.Drawing.Point(16, 8);
             this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxRussian.Name = "pictureBoxRussian";
-            this.pictureBoxRussian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxRussian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxRussian.TabIndex = 36;
             this.pictureBoxRussian.TabStop = false;
             // 
@@ -303,10 +303,10 @@
             // 
             this.pictureBoxGeorgian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxGeorgian.Location = new System.Drawing.Point(726, 16);
+            this.pictureBoxGeorgian.Location = new System.Drawing.Point(726, 8);
             this.pictureBoxGeorgian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxGeorgian.Name = "pictureBoxGeorgian";
-            this.pictureBoxGeorgian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxGeorgian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxGeorgian.TabIndex = 35;
             this.pictureBoxGeorgian.TabStop = false;
             // 
@@ -314,10 +314,10 @@
             // 
             this.pictureBoxArmenian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxArmenian.Location = new System.Drawing.Point(489, 16);
+            this.pictureBoxArmenian.Location = new System.Drawing.Point(489, 8);
             this.pictureBoxArmenian.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxArmenian.Name = "pictureBoxArmenian";
-            this.pictureBoxArmenian.Size = new System.Drawing.Size(188, 203);
+            this.pictureBoxArmenian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxArmenian.TabIndex = 34;
             this.pictureBoxArmenian.TabStop = false;
             // 
@@ -363,10 +363,10 @@
             // 
             this.pictureBoxMain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxMain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxMain.Location = new System.Drawing.Point(357, 265);
+            this.pictureBoxMain.Location = new System.Drawing.Point(396, 298);
             this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxMain.Name = "pictureBoxMain";
-            this.pictureBoxMain.Size = new System.Drawing.Size(284, 307);
+            this.pictureBoxMain.Size = new System.Drawing.Size(188, 217);
             this.pictureBoxMain.TabIndex = 65;
             this.pictureBoxMain.TabStop = false;
             // 
