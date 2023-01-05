@@ -14,54 +14,14 @@ namespace IronPainter
     public partial class FormEditorGameTrain : Form
     {
         OpenFileDialog ofd;
+        public string[] signs = new string[4];
+        public Image mainImg;
         public FormEditorGameTrain()
         {
             InitializeComponent();
         }
+        
 
-        private void FormEditorGameTrain_Load(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void buttonReturnToMenu_Click(object sender, EventArgs e)
-        {
-            FormMenu menu = new FormMenu();
-            menu.Show();
-        }
-        public void CreateWagonCard(TextBox output, PictureBox input)
-        {
-            input.Image = Properties.Resources.FilledWagon;
-            Image image = input.Image;
-            Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
-            new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
-            new SolidBrush(Color.White), new RectangleF(370, 250, 1100, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image = image;
-        }
-        public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
-        {
-            input.Image = img;
-            Image image = input.Image;
-            Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
-            new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
-            new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
-            new StringFormat(StringFormatFlags.NoWrap));
-            input.Image = image;
-        }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void buttonSaveResult_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Всё успешно сохранено");
-            Directory.CreateDirectory("Новая папка Train");
-        }
 
         private void buttonExit_Click_1(object sender, EventArgs e)
         {
@@ -95,8 +55,14 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
+            TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
+            for (int i = 0; i < boxes.Length; i++)
+            {
+                signs[i] = boxes[i].Text;
+            }
             FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
             frm.Show();
+            this.Hide();
         }
     }
 }

@@ -206,6 +206,7 @@
             this.buttonReturnToMenu.TabIndex = 57;
             this.buttonReturnToMenu.Text = "<<< НАЗАД";
             this.buttonReturnToMenu.UseVisualStyleBackColor = true;
+            this.buttonReturnToMenu.Click += new System.EventHandler(this.buttonReturnToMenu_Click);
             // 
             // panel1
             // 
