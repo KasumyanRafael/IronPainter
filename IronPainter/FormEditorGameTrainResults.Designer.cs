@@ -51,6 +51,8 @@
             this.pictureBoxArmenian = new System.Windows.Forms.PictureBox();
             this.buttonSaveResult = new System.Windows.Forms.Button();
             this.buttonResult = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetianTrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussianTrain)).BeginInit();
@@ -61,25 +63,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenian)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonExit
             // 
             this.buttonExit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonExit.Location = new System.Drawing.Point(1030, 467);
+            this.buttonExit.Location = new System.Drawing.Point(21, 437);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(322, 84);
             this.buttonExit.TabIndex = 59;
             this.buttonExit.Text = "ВЫХОД";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonErasor
             // 
             this.buttonErasor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonErasor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonErasor.Location = new System.Drawing.Point(1030, 357);
+            this.buttonErasor.Location = new System.Drawing.Point(21, 328);
             this.buttonErasor.Margin = new System.Windows.Forms.Padding(2);
             this.buttonErasor.Name = "buttonErasor";
             this.buttonErasor.Size = new System.Drawing.Size(322, 84);
@@ -89,7 +94,7 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
@@ -98,7 +103,7 @@
             this.panel2.Controls.Add(this.pictureBoxRussianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
-            this.panel2.Location = new System.Drawing.Point(26, 304);
+            this.panel2.Location = new System.Drawing.Point(12, 563);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(956, 271);
             this.panel2.TabIndex = 54;
@@ -199,7 +204,7 @@
             // 
             this.buttonReturnToMenu.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonReturnToMenu.Location = new System.Drawing.Point(1030, 28);
+            this.buttonReturnToMenu.Location = new System.Drawing.Point(21, 12);
             this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReturnToMenu.Name = "buttonReturnToMenu";
             this.buttonReturnToMenu.Size = new System.Drawing.Size(322, 84);
@@ -210,7 +215,7 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -219,7 +224,7 @@
             this.panel1.Controls.Add(this.pictureBoxRussian);
             this.panel1.Controls.Add(this.pictureBoxGeorgian);
             this.panel1.Controls.Add(this.pictureBoxArmenian);
-            this.panel1.Location = new System.Drawing.Point(26, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(956, 267);
             this.panel1.TabIndex = 53;
@@ -320,7 +325,7 @@
             // 
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonSaveResult.Location = new System.Drawing.Point(1030, 247);
+            this.buttonSaveResult.Location = new System.Drawing.Point(21, 223);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSaveResult.Name = "buttonSaveResult";
             this.buttonSaveResult.Size = new System.Drawing.Size(322, 84);
@@ -332,28 +337,51 @@
             // 
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonResult.Location = new System.Drawing.Point(1030, 137);
+            this.buttonResult.Location = new System.Drawing.Point(21, 121);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(322, 84);
             this.buttonResult.TabIndex = 55;
             this.buttonResult.Text = "ПОСМОТРЕТЬ РЕЗУЛЬТАТ";
             this.buttonResult.UseVisualStyleBackColor = true;
+            this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.panel3.Controls.Add(this.buttonExit);
+            this.panel3.Controls.Add(this.buttonReturnToMenu);
+            this.panel3.Controls.Add(this.buttonErasor);
+            this.panel3.Controls.Add(this.buttonResult);
+            this.panel3.Controls.Add(this.buttonSaveResult);
+            this.panel3.Location = new System.Drawing.Point(999, 42);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(353, 590);
+            this.panel3.TabIndex = 60;
+            // 
+            // pictureBoxMain
+            // 
+            this.pictureBoxMain.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxMain.BackColor = System.Drawing.Color.White;
+            this.pictureBoxMain.Location = new System.Drawing.Point(357, 265);
+            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMain.Name = "pictureBoxMain";
+            this.pictureBoxMain.Size = new System.Drawing.Size(284, 307);
+            this.pictureBoxMain.TabIndex = 65;
+            this.pictureBoxMain.TabStop = false;
             // 
             // FormEditorGameTrainResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1353, 786);
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonErasor);
+            this.ClientSize = new System.Drawing.Size(1353, 846);
+            this.Controls.Add(this.pictureBoxMain);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.buttonReturnToMenu);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buttonSaveResult);
-            this.Controls.Add(this.buttonResult);
+            this.Controls.Add(this.panel3);
             this.Name = "FormEditorGameTrainResults";
             this.Text = "FormEditorGameTrainResults";
+            this.Load += new System.EventHandler(this.FormEditorGameTrainResults_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetianTrain)).EndInit();
@@ -366,6 +394,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenian)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -395,5 +425,7 @@
         public System.Windows.Forms.PictureBox pictureBoxArmenian;
         private System.Windows.Forms.Button buttonSaveResult;
         private System.Windows.Forms.Button buttonResult;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBoxMain;
     }
 }

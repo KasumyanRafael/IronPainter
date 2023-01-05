@@ -15,7 +15,6 @@ namespace IronPainter
     {
         OpenFileDialog ofd;
         public string[] signs = new string[4];
-        public Image mainImg;
         public FormEditorGameTrain()
         {
             InitializeComponent();
@@ -56,13 +55,20 @@ namespace IronPainter
         private void buttonResult_Click(object sender, EventArgs e)
         {
             TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
-            for (int i = 0; i < boxes.Length; i++)
-            {
-                signs[i] = boxes[i].Text;
-            }
             FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
             frm.Show();
+            frm.mainImg = pictureBoxMainPicture.Image;
+            frm.signs = ReadSigns(boxes);
             this.Hide();
+        }
+        public string [] ReadSigns(TextBox[]boxes)
+        {
+            string[]signs=new string[boxes.Length];
+            for (int i = 0; i < boxes.Length; i++)
+            {
+                signs[i]=boxes[i].Text;
+            }
+            return signs;
         }
     }
 }

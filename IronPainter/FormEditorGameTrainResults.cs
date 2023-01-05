@@ -12,27 +12,29 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrainResults : Form
     {
+        public Image mainImg;
+        public string[] signs;
         public FormEditorGameTrainResults()
         {
             InitializeComponent();
         }
-        public void CreateWagonCard(TextBox output, PictureBox input)
+        public void CreateWagonCard(string output, PictureBox input)
         {
             input.Image = Properties.Resources.FilledWagon;
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
+            gr.DrawString(output,
             new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
             new SolidBrush(Color.White), new RectangleF(370, 250, 1100, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
-        public void CreateCard(TextBox output, PictureBox input, Image img, int x, int y)
+        public void CreateCard(string output, PictureBox input, Image img, int x, int y)
         {
             input.Image = img;
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output.Text,
+            gr.DrawString(output,
             new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
             new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
@@ -44,6 +46,25 @@ namespace IronPainter
             FormMenu frm=new FormMenu();
             frm.Show();
             this.Hide();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormEditorGameTrainResults_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void buttonResult_Click(object sender, EventArgs e)
+        {
+            pictureBoxMain.Image = mainImg;
+            PictureBox[] cards = {pictureBoxRussian,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
+            PictureBox[] wagons = {pictureBoxRussianTrain,pictureBoxOssetian,pictureBoxArmenian,pictureBoxGeorgian };
+            CreateCard(signs[0],cards[0],mainImg,50,190);
+            CreateWagonCard(signs[0], cards[0]);
         }
     }
 }
