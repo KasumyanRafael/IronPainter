@@ -28,7 +28,6 @@ namespace IronPainter
         }
         private void FormEditorGameOssetianLoto_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
         }
 
         private void buttonSelection_Click(object sender, EventArgs e)
@@ -122,6 +121,11 @@ namespace IronPainter
                 pictures[i].Image.Save(filename);
             }
             
+        }
+
+        private void labelRus_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
