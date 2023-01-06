@@ -13,7 +13,7 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrain : Form
     {
-OpenFileDialog ofd;
+        OpenFileDialog ofd;
         public string[] signs = new string[4];
         public FormEditorGameTrain()
         {
@@ -32,10 +32,9 @@ OpenFileDialog ofd;
             FormMenu frm=new FormMenu();
             frm.Show();
         }
-
         private void buttonSelection_Click(object sender, EventArgs e)
         {
-ofd = new OpenFileDialog();
+            ofd = new OpenFileDialog();
             ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
