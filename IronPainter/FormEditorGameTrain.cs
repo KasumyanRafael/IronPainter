@@ -31,6 +31,7 @@ namespace IronPainter
         {
             FormMenu frm=new FormMenu();
             frm.Show();
+            this.Hide();
         }
         private void buttonSelection_Click(object sender, EventArgs e)
         {
