@@ -12,13 +12,13 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrainResults : Form
     {
-        public Image mainImg;
+public Image mainImg;
         public string[] signs;
         public FormEditorGameTrainResults()
         {
             InitializeComponent();
         }
-        public void CreateWagonCard(string output, PictureBox input)
+public void CreateWagonCard(string output, PictureBox input)
         {
             Image image = Properties.Resources.FilledWagon;
             Graphics gr = Graphics.FromImage(image);
@@ -28,19 +28,19 @@ namespace IronPainter
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
-        public void CreateCard(string output, PictureBox input, Image img, int x, int y)
+public void CreateCard(string output, PictureBox input, Image img, int x, int y)
         {
             input.Image = img;
             Image image = input.Image;
             Graphics gr = Graphics.FromImage(image);
-            gr.DrawString(output,
+ gr.DrawString(output,
             new System.Drawing.Font("BureauAP", 22, FontStyle.Regular),
             new SolidBrush(Color.Black), new RectangleF(x, y, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
 
-        private void buttonReturnToMenu_Click(object sender, EventArgs e)
+private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
             FormEditorGameTrain frm=new FormEditorGameTrain();
             frm.Show();

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonExit = new System.Windows.Forms.Button();
+this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@
             this.pictureBoxRussianTrain = new System.Windows.Forms.PictureBox();
             this.pictureBoxGeorgianTrain = new System.Windows.Forms.PictureBox();
             this.pictureBoxArmenianTrain = new System.Windows.Forms.PictureBox();
-            this.buttonReturnToMenu = new System.Windows.Forms.Button();
+this.buttonReturnToMenu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenian)).BeginInit();
-            this.panel3.SuspendLayout();
+this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@
             this.panel2.Controls.Add(this.pictureBoxRussianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
-            this.panel2.Location = new System.Drawing.Point(12, 578);
+this.panel2.Location = new System.Drawing.Point(12, 578);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(956, 271);
             this.panel2.TabIndex = 54;
@@ -99,7 +99,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.Location = new System.Drawing.Point(483, 226);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -111,7 +111,7 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.Location = new System.Drawing.Point(723, 226);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
@@ -123,7 +123,7 @@
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.Location = new System.Drawing.Point(240, 226);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
@@ -135,7 +135,7 @@
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.Location = new System.Drawing.Point(15, 226);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -147,7 +147,7 @@
             // 
             this.pictureBoxOssetianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(253, 2);
+this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(253, 2);
             this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxOssetianTrain.Name = "pictureBoxOssetianTrain";
             this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(188, 216);
@@ -158,7 +158,7 @@
             // 
             this.pictureBoxRussianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxRussianTrain.Location = new System.Drawing.Point(16, 2);
+this.pictureBoxRussianTrain.Location = new System.Drawing.Point(16, 2);
             this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxRussianTrain.Name = "pictureBoxRussianTrain";
             this.pictureBoxRussianTrain.Size = new System.Drawing.Size(188, 216);
@@ -169,7 +169,7 @@
             // 
             this.pictureBoxGeorgianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(725, 2);
+this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(725, 2);
             this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxGeorgianTrain.Name = "pictureBoxGeorgianTrain";
             this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(188, 216);
@@ -180,7 +180,7 @@
             // 
             this.pictureBoxArmenianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenianTrain.BackColor = System.Drawing.Color.White;
-            this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(489, 2);
+this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(489, 2);
             this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxArmenianTrain.Name = "pictureBoxArmenianTrain";
             this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(188, 216);
@@ -311,7 +311,7 @@
             // buttonSaveResult
             // 
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonSaveResult.Location = new System.Drawing.Point(21, 220);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSaveResult.Name = "buttonSaveResult";
@@ -323,7 +323,7 @@
             // buttonResult
             // 
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+ this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonResult.Location = new System.Drawing.Point(21, 118);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResult.Name = "buttonResult";
@@ -333,7 +333,7 @@
             this.buttonResult.UseVisualStyleBackColor = true;
             this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
             // 
-            // panel3
+// panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel3.Controls.Add(this.buttonExit);
@@ -380,7 +380,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenian)).EndInit();
-            this.panel3.ResumeLayout(false);
+this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
             this.ResumeLayout(false);
 
@@ -388,7 +388,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonExit;
+ private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -398,7 +398,7 @@
         private System.Windows.Forms.PictureBox pictureBoxRussianTrain;
         private System.Windows.Forms.PictureBox pictureBoxGeorgianTrain;
         private System.Windows.Forms.PictureBox pictureBoxArmenianTrain;
-        private System.Windows.Forms.Button buttonReturnToMenu;
+ private System.Windows.Forms.Button buttonReturnToMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
