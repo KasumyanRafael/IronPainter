@@ -35,6 +35,10 @@ namespace IronPainter
         private void buttonSelection_Click(object sender, EventArgs e)
         {
             ofd = new OpenFileDialog();
+            if(pictureBoxMainPicture.Image != null)
+            {
+                buttonResult.Enabled = true;
+            }
             ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
             if (ofd.ShowDialog() == DialogResult.OK)
             {

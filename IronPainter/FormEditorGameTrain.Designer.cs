@@ -102,6 +102,7 @@
             // 
             // buttonResult
             // 
+            this.buttonResult.Enabled = false;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonResult.Location = new System.Drawing.Point(491, 446);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
