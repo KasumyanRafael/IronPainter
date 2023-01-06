@@ -40,6 +40,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBoxThemes = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxThemes = new System.Windows.Forms.ComboBox();
             this.pictureBoxMainPicture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).BeginInit();
             this.SuspendLayout();
@@ -47,10 +52,10 @@
             // buttonSelection
             // 
             this.buttonSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSelection.Location = new System.Drawing.Point(619, 22);
+            this.buttonSelection.Location = new System.Drawing.Point(606, 333);
             this.buttonSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelection.Name = "buttonSelection";
-            this.buttonSelection.Size = new System.Drawing.Size(441, 80);
+            this.buttonSelection.Size = new System.Drawing.Size(351, 121);
             this.buttonSelection.TabIndex = 52;
             this.buttonSelection.Text = "ВЫБЕРИТЕ ИЗОБРАЖЕНИЕ";
             this.buttonSelection.UseVisualStyleBackColor = true;
@@ -102,10 +107,10 @@
             // buttonResult
             // 
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonResult.Location = new System.Drawing.Point(619, 558);
+            this.buttonResult.Location = new System.Drawing.Point(772, 531);
             this.buttonResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(441, 80);
+            this.buttonResult.Size = new System.Drawing.Size(520, 80);
             this.buttonResult.TabIndex = 59;
             this.buttonResult.Text = "ПЕРЕЙТИ К РЕЗУЛЬТАТУ";
             this.buttonResult.UseVisualStyleBackColor = true;
@@ -114,7 +119,7 @@
             // textBoxGeorgianWord
             // 
             this.textBoxGeorgianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxGeorgianWord.Location = new System.Drawing.Point(43, 630);
+            this.textBoxGeorgianWord.Location = new System.Drawing.Point(43, 573);
             this.textBoxGeorgianWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxGeorgianWord.Name = "textBoxGeorgianWord";
             this.textBoxGeorgianWord.Size = new System.Drawing.Size(523, 38);
@@ -123,7 +128,7 @@
             // textBoxArmenianWord
             // 
             this.textBoxArmenianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxArmenianWord.Location = new System.Drawing.Point(43, 482);
+            this.textBoxArmenianWord.Location = new System.Drawing.Point(43, 435);
             this.textBoxArmenianWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxArmenianWord.Name = "textBoxArmenianWord";
             this.textBoxArmenianWord.Size = new System.Drawing.Size(523, 38);
@@ -132,7 +137,7 @@
             // textBoxOssetianWord
             // 
             this.textBoxOssetianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxOssetianWord.Location = new System.Drawing.Point(43, 335);
+            this.textBoxOssetianWord.Location = new System.Drawing.Point(43, 308);
             this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxOssetianWord.Name = "textBoxOssetianWord";
             this.textBoxOssetianWord.Size = new System.Drawing.Size(523, 38);
@@ -142,7 +147,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(43, 591);
+            this.label4.Location = new System.Drawing.Point(43, 534);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(521, 32);
             this.label4.TabIndex = 55;
@@ -152,7 +157,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(43, 439);
+            this.label3.Location = new System.Drawing.Point(43, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(516, 32);
             this.label3.TabIndex = 54;
@@ -162,17 +167,80 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(43, 289);
+            this.label2.Location = new System.Drawing.Point(43, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(525, 32);
             this.label2.TabIndex = 53;
             this.label2.Text = "введите слово на осетинском языке";
             // 
+            // textBoxThemes
+            // 
+            this.textBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.textBoxThemes.Location = new System.Drawing.Point(1026, 435);
+            this.textBoxThemes.Name = "textBoxThemes";
+            this.textBoxThemes.Size = new System.Drawing.Size(466, 41);
+            this.textBoxThemes.TabIndex = 71;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label5.Location = new System.Drawing.Point(1020, 360);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(468, 36);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "создайте свою новую тематику";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label6.Location = new System.Drawing.Point(1222, 244);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 36);
+            this.label6.TabIndex = 69;
+            this.label6.Text = "или";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(1020, 48);
+            this.label7.MaximumSize = new System.Drawing.Size(500, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(493, 72);
+            this.label7.TabIndex = 68;
+            this.label7.Text = "Выберите тематику в которую хотите поместить свою карточку";
+            // 
+            // comboBoxThemes
+            // 
+            this.comboBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.comboBoxThemes.FormattingEnabled = true;
+            this.comboBoxThemes.Items.AddRange(new object[] {
+            "Дикие животные",
+            "Домашние животные",
+            "Птицы",
+            "Морские обитатели",
+            "Насекомые",
+            "Фрукты и ягоды ",
+            "Овощи",
+            "Посуда, мебель и Бытовая техника",
+            "Цветы и деревья",
+            "Транспорт",
+            "Строительные инструменты",
+            "Музыкальные инструменты",
+            "Одежда",
+            "Профессии"});
+            this.comboBoxThemes.Location = new System.Drawing.Point(1026, 162);
+            this.comboBoxThemes.Name = "comboBoxThemes";
+            this.comboBoxThemes.Size = new System.Drawing.Size(466, 44);
+            this.comboBoxThemes.TabIndex = 67;
+            // 
             // pictureBoxMainPicture
             // 
             this.pictureBoxMainPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
-            this.pictureBoxMainPicture.Location = new System.Drawing.Point(712, 187);
+            this.pictureBoxMainPicture.Location = new System.Drawing.Point(652, 57);
             this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxMainPicture.Name = "pictureBoxMainPicture";
             this.pictureBoxMainPicture.Size = new System.Drawing.Size(251, 250);
@@ -183,7 +251,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 693);
+            this.ClientSize = new System.Drawing.Size(1520, 652);
+            this.Controls.Add(this.textBoxThemes);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBoxThemes);
             this.Controls.Add(this.pictureBoxMainPicture);
             this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.label1);
@@ -220,6 +293,11 @@ private System.Windows.Forms.Button buttonSelection;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxThemes;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxThemes;
         public System.Windows.Forms.PictureBox pictureBoxMainPicture;
     }
 }

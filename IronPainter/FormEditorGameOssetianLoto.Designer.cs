@@ -100,7 +100,7 @@
             // 
             this.buttonSelection.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSelection.Location = new System.Drawing.Point(12, 340);
+            this.buttonSelection.Location = new System.Drawing.Point(12, 345);
             this.buttonSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelection.Name = "buttonSelection";
             this.buttonSelection.Size = new System.Drawing.Size(539, 75);
@@ -311,7 +311,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label4.Location = new System.Drawing.Point(241, 674);
+            this.label4.Location = new System.Drawing.Point(241, 652);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 36);
             this.label4.TabIndex = 50;
@@ -321,7 +321,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label5.Location = new System.Drawing.Point(63, 743);
+            this.label5.Location = new System.Drawing.Point(63, 715);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(468, 36);
             this.label5.TabIndex = 51;
@@ -330,7 +330,7 @@
             // textBoxThemes
             // 
             this.textBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBoxThemes.Location = new System.Drawing.Point(12, 787);
+            this.textBoxThemes.Location = new System.Drawing.Point(12, 762);
             this.textBoxThemes.Name = "textBoxThemes";
             this.textBoxThemes.Size = new System.Drawing.Size(539, 41);
             this.textBoxThemes.TabIndex = 52;
