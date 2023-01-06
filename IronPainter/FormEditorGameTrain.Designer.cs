@@ -240,7 +240,8 @@
             "Строительные инструменты",
             "Музыкальные инструменты",
             "Одежда",
-            "Профессии"});
+            "Профессии",
+            "Продукты"});
             this.comboBoxThemes.Location = new System.Drawing.Point(770, 132);
             this.comboBoxThemes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxThemes.Name = "comboBoxThemes";
