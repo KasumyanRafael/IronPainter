@@ -31,6 +31,7 @@ namespace IronPainter
         {
             FormMenu frm=new FormMenu();
             frm.Show();
+            this.Hide();
         }
         private void buttonSelection_Click(object sender, EventArgs e)
         {
@@ -68,6 +69,12 @@ namespace IronPainter
                 signs[i]=boxes[i].Text;
             }
             return signs;
+        }
+
+        private void buttonErasor_Click(object sender, EventArgs e)
+        {
+            pictureBoxMainPicture.Image=null;
+            buttonResult.Enabled = false;
         }
     }
 }

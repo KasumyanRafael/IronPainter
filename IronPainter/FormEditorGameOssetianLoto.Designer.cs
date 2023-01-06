@@ -61,28 +61,29 @@
             // textBoxOssetianWord
             // 
             this.textBoxOssetianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxOssetianWord.Location = new System.Drawing.Point(12, 279);
-            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxOssetianWord.Location = new System.Drawing.Point(9, 227);
+            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxOssetianWord.Name = "textBoxOssetianWord";
-            this.textBoxOssetianWord.Size = new System.Drawing.Size(539, 38);
+            this.textBoxOssetianWord.Size = new System.Drawing.Size(405, 32);
             this.textBoxOssetianWord.TabIndex = 9;
             // 
             // textBoxRussianWord
             // 
             this.textBoxRussianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxRussianWord.Location = new System.Drawing.Point(12, 164);
-            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRussianWord.Location = new System.Drawing.Point(9, 133);
+            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRussianWord.Name = "textBoxRussianWord";
-            this.textBoxRussianWord.Size = new System.Drawing.Size(539, 38);
+            this.textBoxRussianWord.Size = new System.Drawing.Size(405, 32);
             this.textBoxRussianWord.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 227);
+            this.label2.Location = new System.Drawing.Point(4, 184);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(525, 32);
+            this.label2.Size = new System.Drawing.Size(417, 26);
             this.label2.TabIndex = 7;
             this.label2.Text = "введите слово на осетинском языке";
             // 
@@ -90,9 +91,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(6, 130);
+            this.label1.Location = new System.Drawing.Point(4, 106);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 32);
+            this.label1.Size = new System.Drawing.Size(379, 26);
             this.label1.TabIndex = 6;
             this.label1.Text = "введите слово на русском языке";
             // 
@@ -100,10 +102,10 @@
             // 
             this.buttonSelection.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSelection.Location = new System.Drawing.Point(12, 345);
-            this.buttonSelection.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSelection.Location = new System.Drawing.Point(9, 280);
+            this.buttonSelection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSelection.Name = "buttonSelection";
-            this.buttonSelection.Size = new System.Drawing.Size(539, 75);
+            this.buttonSelection.Size = new System.Drawing.Size(404, 61);
             this.buttonSelection.TabIndex = 11;
             this.buttonSelection.Text = "ВЫБЕРИТЕ ИЗОБРАЖЕНИЕ";
             this.buttonSelection.UseVisualStyleBackColor = true;
@@ -113,10 +115,10 @@
             // 
             this.pictureBoxMainPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
-            this.pictureBoxMainPicture.Location = new System.Drawing.Point(64, 2);
-            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxMainPicture.Location = new System.Drawing.Point(48, 2);
+            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxMainPicture.Name = "pictureBoxMainPicture";
-            this.pictureBoxMainPicture.Size = new System.Drawing.Size(260, 260);
+            this.pictureBoxMainPicture.Size = new System.Drawing.Size(195, 211);
             this.pictureBoxMainPicture.TabIndex = 10;
             this.pictureBoxMainPicture.TabStop = false;
             // 
@@ -124,10 +126,10 @@
             // 
             this.pictureBoxOssetian.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxOssetian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxOssetian.Location = new System.Drawing.Point(64, 324);
-            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxOssetian.Location = new System.Drawing.Point(48, 263);
+            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxOssetian.Name = "pictureBoxOssetian";
-            this.pictureBoxOssetian.Size = new System.Drawing.Size(260, 260);
+            this.pictureBoxOssetian.Size = new System.Drawing.Size(195, 211);
             this.pictureBoxOssetian.TabIndex = 25;
             this.pictureBoxOssetian.TabStop = false;
             // 
@@ -135,10 +137,10 @@
             // 
             this.pictureBoxRussian.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxRussian.BackColor = System.Drawing.Color.White;
-            this.pictureBoxRussian.Location = new System.Drawing.Point(482, 2);
-            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxRussian.Location = new System.Drawing.Point(362, 2);
+            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxRussian.Name = "pictureBoxRussian";
-            this.pictureBoxRussian.Size = new System.Drawing.Size(260, 260);
+            this.pictureBoxRussian.Size = new System.Drawing.Size(195, 211);
             this.pictureBoxRussian.TabIndex = 24;
             this.pictureBoxRussian.TabStop = false;
             // 
@@ -146,10 +148,10 @@
             // 
             this.pictureBoxWordWithoutImage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxWordWithoutImage.BackColor = System.Drawing.Color.White;
-            this.pictureBoxWordWithoutImage.Location = new System.Drawing.Point(482, 327);
-            this.pictureBoxWordWithoutImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxWordWithoutImage.Location = new System.Drawing.Point(362, 266);
+            this.pictureBoxWordWithoutImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxWordWithoutImage.Name = "pictureBoxWordWithoutImage";
-            this.pictureBoxWordWithoutImage.Size = new System.Drawing.Size(260, 260);
+            this.pictureBoxWordWithoutImage.Size = new System.Drawing.Size(195, 211);
             this.pictureBoxWordWithoutImage.TabIndex = 28;
             this.pictureBoxWordWithoutImage.TabStop = false;
             // 
@@ -158,10 +160,10 @@
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonSaveResult.Enabled = false;
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSaveResult.Location = new System.Drawing.Point(1031, 743);
-            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSaveResult.Location = new System.Drawing.Point(773, 604);
+            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSaveResult.Name = "buttonSaveResult";
-            this.buttonSaveResult.Size = new System.Drawing.Size(368, 85);
+            this.buttonSaveResult.Size = new System.Drawing.Size(276, 69);
             this.buttonSaveResult.TabIndex = 37;
             this.buttonSaveResult.Text = "СОХРАНИТЬ РЕЗУЛЬТАТ";
             this.buttonSaveResult.UseVisualStyleBackColor = true;
@@ -172,10 +174,10 @@
             this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonResult.Enabled = false;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonResult.Location = new System.Drawing.Point(779, 652);
-            this.buttonResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonResult.Location = new System.Drawing.Point(584, 530);
+            this.buttonResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(368, 85);
+            this.buttonResult.Size = new System.Drawing.Size(276, 69);
             this.buttonResult.TabIndex = 36;
             this.buttonResult.Text = "ПОСМОТРЕТЬ РЕЗУЛЬТАТ";
             this.buttonResult.UseVisualStyleBackColor = true;
@@ -185,10 +187,9 @@
             // 
             this.labelIron.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelIron.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIron.Location = new System.Drawing.Point(48, 586);
-            this.labelIron.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIron.Location = new System.Drawing.Point(36, 476);
             this.labelIron.Name = "labelIron";
-            this.labelIron.Size = new System.Drawing.Size(315, 33);
+            this.labelIron.Size = new System.Drawing.Size(236, 27);
             this.labelIron.TabIndex = 38;
             this.labelIron.Text = "Осетинская подпись";
             this.labelIron.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,10 +198,9 @@
             // 
             this.labelRus.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelRus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRus.Location = new System.Drawing.Point(464, 264);
-            this.labelRus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRus.Location = new System.Drawing.Point(348, 214);
             this.labelRus.Name = "labelRus";
-            this.labelRus.Size = new System.Drawing.Size(315, 30);
+            this.labelRus.Size = new System.Drawing.Size(236, 24);
             this.labelRus.TabIndex = 39;
             this.labelRus.Text = "Русская подпись";
             this.labelRus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,10 +210,9 @@
             // 
             this.labelIronWord.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.labelIronWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelIronWord.Location = new System.Drawing.Point(448, 586);
-            this.labelIronWord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelIronWord.Location = new System.Drawing.Point(336, 476);
             this.labelIronWord.Name = "labelIronWord";
-            this.labelIronWord.Size = new System.Drawing.Size(315, 36);
+            this.labelIronWord.Size = new System.Drawing.Size(236, 29);
             this.labelIronWord.TabIndex = 40;
             this.labelIronWord.Text = "Осетинское слово";
             this.labelIronWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,10 +220,10 @@
             // buttonReturnToMenu
             // 
             this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonReturnToMenu.Location = new System.Drawing.Point(12, 11);
-            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonReturnToMenu.Location = new System.Drawing.Point(9, 9);
+            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonReturnToMenu.Name = "buttonReturnToMenu";
-            this.buttonReturnToMenu.Size = new System.Drawing.Size(255, 103);
+            this.buttonReturnToMenu.Size = new System.Drawing.Size(191, 84);
             this.buttonReturnToMenu.TabIndex = 44;
             this.buttonReturnToMenu.Text = "<<<Меню";
             this.buttonReturnToMenu.UseVisualStyleBackColor = true;
@@ -240,20 +239,19 @@
             this.panelBracket.Controls.Add(this.pictureBoxMainPicture);
             this.panelBracket.Controls.Add(this.labelIron);
             this.panelBracket.Controls.Add(this.labelRus);
-            this.panelBracket.Location = new System.Drawing.Point(575, 13);
-            this.panelBracket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBracket.Location = new System.Drawing.Point(431, 11);
             this.panelBracket.Name = "panelBracket";
-            this.panelBracket.Size = new System.Drawing.Size(824, 634);
+            this.panelBracket.Size = new System.Drawing.Size(618, 515);
             this.panelBracket.TabIndex = 45;
             // 
             // buttonExit
             // 
             this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.Location = new System.Drawing.Point(296, 11);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonExit.Location = new System.Drawing.Point(222, 9);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(255, 103);
+            this.buttonExit.Size = new System.Drawing.Size(191, 84);
             this.buttonExit.TabIndex = 46;
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseVisualStyleBackColor = true;
@@ -263,10 +261,10 @@
             // 
             this.buttonErasor.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buttonErasor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonErasor.Location = new System.Drawing.Point(575, 743);
-            this.buttonErasor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonErasor.Location = new System.Drawing.Point(431, 604);
+            this.buttonErasor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonErasor.Name = "buttonErasor";
-            this.buttonErasor.Size = new System.Drawing.Size(368, 85);
+            this.buttonErasor.Size = new System.Drawing.Size(276, 69);
             this.buttonErasor.TabIndex = 47;
             this.buttonErasor.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
             this.buttonErasor.UseVisualStyleBackColor = true;
@@ -291,19 +289,21 @@
             "Музыкальные инструменты",
             "Одежда",
             "Профессии"});
-            this.comboBoxThemes.Location = new System.Drawing.Point(12, 583);
+            this.comboBoxThemes.Location = new System.Drawing.Point(9, 474);
+            this.comboBoxThemes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxThemes.Name = "comboBoxThemes";
-            this.comboBoxThemes.Size = new System.Drawing.Size(539, 44);
+            this.comboBoxThemes.Size = new System.Drawing.Size(405, 37);
             this.comboBoxThemes.TabIndex = 48;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(38, 474);
-            this.label3.MaximumSize = new System.Drawing.Size(539, 0);
+            this.label3.Location = new System.Drawing.Point(28, 385);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.MaximumSize = new System.Drawing.Size(404, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(493, 72);
+            this.label3.Size = new System.Drawing.Size(393, 58);
             this.label3.TabIndex = 49;
             this.label3.Text = "Выберите тематику в которую хотите поместить свою карточку";
             // 
@@ -311,9 +311,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label4.Location = new System.Drawing.Point(241, 652);
+            this.label4.Location = new System.Drawing.Point(181, 530);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 36);
+            this.label4.Size = new System.Drawing.Size(58, 29);
             this.label4.TabIndex = 50;
             this.label4.Text = "или";
             // 
@@ -321,25 +322,27 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label5.Location = new System.Drawing.Point(63, 715);
+            this.label5.Location = new System.Drawing.Point(47, 581);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(468, 36);
+            this.label5.Size = new System.Drawing.Size(373, 29);
             this.label5.TabIndex = 51;
             this.label5.Text = "создайте свою новую тематику";
             // 
             // textBoxThemes
             // 
             this.textBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBoxThemes.Location = new System.Drawing.Point(12, 762);
+            this.textBoxThemes.Location = new System.Drawing.Point(9, 619);
+            this.textBoxThemes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxThemes.Name = "textBoxThemes";
-            this.textBoxThemes.Size = new System.Drawing.Size(539, 41);
+            this.textBoxThemes.Size = new System.Drawing.Size(405, 35);
             this.textBoxThemes.TabIndex = 52;
             // 
             // FormEditorGameOssetianLoto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1416, 910);
+            this.ClientSize = new System.Drawing.Size(1062, 739);
             this.Controls.Add(this.textBoxThemes);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -356,11 +359,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelBracket);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormEditorGameOssetianLoto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "РЕДАКТОР ИГРЫ \"ОСЕТИНКОЕ ЛОТО\"";
-            this.Load += new System.EventHandler(this.FormEditorGameOssetianLoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).EndInit();

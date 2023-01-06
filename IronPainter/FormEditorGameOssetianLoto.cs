@@ -88,6 +88,7 @@ namespace IronPainter
         {
             FormMenu menu = new FormMenu();
             menu.Show();
+            this.Hide();
         }
         private void buttonExit_Click(object sender, EventArgs e)
         {
