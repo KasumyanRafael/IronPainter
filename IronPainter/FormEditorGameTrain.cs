@@ -13,7 +13,7 @@ namespace IronPainter
 {
     public partial class FormEditorGameTrain : Form
     {
-        OpenFileDialog ofd;
+OpenFileDialog ofd;
         public string[] signs = new string[4];
         public FormEditorGameTrain()
         {
@@ -35,7 +35,7 @@ namespace IronPainter
 
         private void buttonSelection_Click(object sender, EventArgs e)
         {
-            ofd = new OpenFileDialog();
+ofd = new OpenFileDialog();
             ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -54,7 +54,7 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-            TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
+TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
             FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
             frm.Show();
             frm.mainImg = pictureBoxMainPicture.Image;

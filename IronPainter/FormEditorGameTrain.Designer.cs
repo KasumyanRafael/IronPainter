@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonSelection = new System.Windows.Forms.Button();
+this.buttonSelection = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRussianWord = new System.Windows.Forms.TextBox();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -174,7 +174,7 @@
             // 
             // pictureBoxMainPicture
             // 
-            this.pictureBoxMainPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+this.pictureBoxMainPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
             this.pictureBoxMainPicture.Location = new System.Drawing.Point(534, 152);
             this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2);
@@ -183,11 +183,31 @@
             this.pictureBoxMainPicture.TabIndex = 66;
             this.pictureBoxMainPicture.TabStop = false;
             // 
+            // buttonSelection
+            // 
+            this.buttonSelection.Font = new System.Drawing.Font("Bebas Neue Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSelection.Location = new System.Drawing.Point(634, 14);
+            this.buttonSelection.Name = "buttonSelection";
+            this.buttonSelection.Size = new System.Drawing.Size(378, 60);
+            this.buttonSelection.TabIndex = 52;
+            this.buttonSelection.Text = "ВЫБЕРИТЕ ИЗОБРАЖЕНИЕ";
+            this.buttonSelection.UseVisualStyleBackColor = true;
+            this.buttonSelection.Click += new System.EventHandler(this.buttonSelection_Click_1);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BackColor = System.Drawing.Color.White;
+            this.pictureBox.Location = new System.Drawing.Point(634, 129);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(378, 378);
+            this.pictureBox.TabIndex = 51;
+            this.pictureBox.TabStop = false;
+            // 
             // FormEditorGameTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 563);
+this.ClientSize = new System.Drawing.Size(806, 563);
             this.Controls.Add(this.pictureBoxMainPicture);
             this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.label1);
@@ -201,18 +221,18 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEditorGameTrain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "РЕДАКТОР ИГРЫ \"ПОЕЗД\"";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
+((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonSelection;
+private System.Windows.Forms.Button buttonSelection;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxRussianWord;
         private System.Windows.Forms.Button buttonExit;
