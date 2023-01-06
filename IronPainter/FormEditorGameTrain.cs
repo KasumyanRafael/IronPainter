@@ -53,7 +53,7 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
-TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
+            TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
             FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
             frm.Show();
             frm.mainImg = pictureBoxMainPicture.Image;

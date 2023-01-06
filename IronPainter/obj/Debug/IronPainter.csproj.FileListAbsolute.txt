@@ -12,3 +12,17 @@ C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\I
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameOssetianLoto.resources
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrain.resources
 C:\Users\Efrem\Desktop\Рафаэль\Курсовая работа 1 курс\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrainResults.resources
+C:\программирование\IronPainter\IronPainter\bin\Debug\IronPainter.exe.config
+C:\программирование\IronPainter\IronPainter\bin\Debug\IronPainter.exe
+C:\программирование\IronPainter\IronPainter\bin\Debug\IronPainter.pdb
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.csproj.AssemblyReference.cache
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.csproj.SuggestedBindingRedirects.cache
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameOssetianLoto.resources
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrain.resources
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.FormEditorGameTrainResults.resources
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.FormMenu.resources
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.Properties.Resources.resources
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.csproj.GenerateResource.cache
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.csproj.CoreCompileInputs.cache
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.exe
+C:\программирование\IronPainter\IronPainter\obj\Debug\IronPainter.pdb
