@@ -61,13 +61,15 @@ namespace IronPainter
 
         private void buttonResult_Click(object sender, EventArgs e)
         {
+            buttonSaveResult.Enabled = true;
+            buttonReturnToMenu.Enabled = true;
             pictureBoxMain.Image = mainImg;
-            //PictureBox[] wagons = { pictureBoxRussianTrain, pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
             PictureBox[] pictures = { pictureBoxRussian, pictureBoxOssetian, pictureBoxArmenian, pictureBoxGeorgian };
+            PictureBox[] train = { pictureBoxRussianTrain, pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
             for (int i = 0; i < pictures.Length; i++)
             {
                 CreateCard(signs[i], pictures[i], pictureBoxMain.Image, 50, 190);
-                //CreateWagonCard(signs[i], wagons[i]);
+                CreateWagonCard(signs[i], train[i]);
             }
         }
 
@@ -77,7 +79,9 @@ namespace IronPainter
             int cardId = Convert.ToInt32(file.ReadLine());
             file.Close();
             PictureBox[] cards = { pictureBoxMain, pictureBoxRussian, pictureBoxOssetian, pictureBoxArmenian,pictureBoxGeorgian };
-            SaveImages(cards, cardId, categoryNumber);
+            PictureBox[] train = { pictureBoxRussianTrain, pictureBoxOssetianTrain, pictureBoxArmenianTrain, pictureBoxGeorgianTrain };
+            SaveCardImages(cards, cardId, categoryNumber);
+            SaveWagonImages(train, cardId, categoryNumber);
             cardId++;
             StreamWriter thisfile = new StreamWriter("trainPictureId.txt");
             thisfile.WriteLine(cardId);
@@ -87,7 +91,7 @@ namespace IronPainter
             form.Show();
             this.Hide();
         }
-        public void SaveImages(PictureBox[] pictures, int num, int category)
+        public void SaveCardImages(PictureBox[] pictures, int num, int category)
         {
             List<string> filenames = new List<string>();
             string numberOfCategory;
@@ -102,6 +106,25 @@ namespace IronPainter
                     numberOfCategory = category.ToString();
                 }
                 string filename = String.Format("p{0}type{1}cat{2}Train.bmp", num, i, numberOfCategory);
+                filenames.Add(filename);
+                pictures[i].Image.Save(filename);
+            }
+        }
+        public void SaveWagonImages(PictureBox[] pictures, int num, int category)
+        {
+            List<string> filenames = new List<string>();
+            string numberOfCategory;
+            for (int i = 0; i < pictures.Length; i++)
+            {
+                if (category < 10)
+                {
+                    numberOfCategory = String.Format("0{0}", category);
+                }
+                else
+                {
+                    numberOfCategory = category.ToString();
+                }
+                string filename = String.Format("wagon{0}type{1}cat{2}Train.bmp", num, i, numberOfCategory);
                 filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }

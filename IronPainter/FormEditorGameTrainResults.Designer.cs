@@ -190,6 +190,7 @@
             // buttonReturnToMenu
             // 
             this.buttonReturnToMenu.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonReturnToMenu.Enabled = false;
             this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonReturnToMenu.Location = new System.Drawing.Point(21, 9);
             this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2);
@@ -311,6 +312,7 @@
             // buttonSaveResult
             // 
             this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonSaveResult.Enabled = false;
             this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonSaveResult.Location = new System.Drawing.Point(21, 220);
             this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
