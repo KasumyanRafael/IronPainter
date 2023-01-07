@@ -15,6 +15,7 @@ namespace IronPainter
     {
         OpenFileDialog ofd;
         public Dictionary<string,int> categories = new Dictionary<string,int>();
+        public int categoryNumber;
         public string[] signs = new string[4];
         public FormEditorGameTrain()
         {
@@ -56,11 +57,22 @@ namespace IronPainter
         private void buttonResult_Click(object sender, EventArgs e)
         {
             TextBox[] boxes = {textBoxRussianWord,textBoxOssetianWord,textBoxArmenianWord,textBoxGeorgianWord};
-            FormEditorGameTrainResults frm=new FormEditorGameTrainResults();
-            frm.Show();
-            frm.mainImg = pictureBoxMainPicture.Image;
-            frm.signs = ReadSigns(boxes);
-            this.Hide();
+            string category = comboBoxInnerThemes.Text;
+            if(category==String.Empty)
+            {
+                MessageBox.Show("Ошибка: вы не выбрали категорию");
+            }
+            else
+            {
+                categoryNumber=categories[category];
+                FormEditorGameTrainResults frm = new FormEditorGameTrainResults();
+                frm.Show();
+                frm.categoryNumber = categoryNumber;
+                frm.mainImg = pictureBoxMainPicture.Image;
+                frm.signs = ReadSigns(boxes);
+                this.Hide();
+            }
+            
         }
         public string [] ReadSigns(TextBox[]boxes)
         {
