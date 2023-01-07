@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
-using System.IO.Compression;
+using System.IO;
 
 namespace IronPainter
 {
@@ -108,9 +108,19 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
+            StreamReader file = new StreamReader("lotoPictureId.txt");
+            int cardId=Convert.ToInt32(file.ReadLine());
+            file.Close();
             PictureBox[] pictures = { pictureBoxMainPicture,pictureBoxRussian,pictureBoxOssetian,pictureBoxWordWithoutImage };
-            SaveImages(pictures,6);
+            SaveImages(pictures,cardId);
+            cardId++;
+            StreamWriter thisfile = new StreamWriter("lotoPictureId.txt");
+            thisfile.WriteLine(cardId);
+            thisfile.Close();
             MessageBox.Show("Всё успешно сохранено!");
+            FormMenu form=new FormMenu();
+            form.Show();
+            this.Hide();
         }
         public void SaveImages(PictureBox[] pictures,int num)
         {
@@ -121,12 +131,6 @@ namespace IronPainter
                 filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }
-            
-        }
-
-        private void labelRus_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -20,7 +20,7 @@ namespace IronPainter
 
         private void buttonEditorGameTrain_Click(object sender, EventArgs e)
         {
-            CreateFile("trainCatId.txt");
+            CreateFile("trainPictureId.txt");
             FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
             this.Hide();
             formEditorGameTrain.Show();
@@ -28,7 +28,7 @@ namespace IronPainter
 
         private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
         {
-            CreateFile("lotoCatId.txt");
+            CreateFile("lotoPictureId.txt");
             FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
             this.Hide();
             formEditorGameOssetianLoto.Show();

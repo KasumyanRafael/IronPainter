@@ -204,7 +204,6 @@
             this.labelRus.TabIndex = 39;
             this.labelRus.Text = "Русская подпись";
             this.labelRus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelRus.Click += new System.EventHandler(this.labelRus_Click);
             // 
             // labelIronWord
             // 
