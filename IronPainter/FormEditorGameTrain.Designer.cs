@@ -44,7 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBoxThemes = new System.Windows.Forms.ComboBox();
+            this.comboBoxInnerThemes = new System.Windows.Forms.ComboBox();
             this.pictureBoxMainPicture = new System.Windows.Forms.PictureBox();
             this.buttonErasor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).BeginInit();
@@ -54,7 +54,7 @@
             // 
             this.buttonSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSelection.Location = new System.Drawing.Point(454, 271);
-            this.buttonSelection.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSelection.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelection.Name = "buttonSelection";
             this.buttonSelection.Size = new System.Drawing.Size(263, 98);
             this.buttonSelection.TabIndex = 52;
@@ -77,7 +77,7 @@
             // 
             this.textBoxRussianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxRussianWord.Location = new System.Drawing.Point(32, 152);
-            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRussianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRussianWord.Name = "textBoxRussianWord";
             this.textBoxRussianWord.Size = new System.Drawing.Size(393, 32);
             this.textBoxRussianWord.TabIndex = 62;
@@ -86,7 +86,7 @@
             // 
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonExit.Location = new System.Drawing.Point(247, 18);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(176, 51);
             this.buttonExit.TabIndex = 61;
@@ -98,7 +98,7 @@
             // 
             this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonReturnToMenu.Location = new System.Drawing.Point(31, 18);
-            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReturnToMenu.Name = "buttonReturnToMenu";
             this.buttonReturnToMenu.Size = new System.Drawing.Size(176, 51);
             this.buttonReturnToMenu.TabIndex = 60;
@@ -111,7 +111,7 @@
             this.buttonResult.Enabled = false;
             this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonResult.Location = new System.Drawing.Point(743, 434);
-            this.buttonResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(390, 65);
             this.buttonResult.TabIndex = 59;
@@ -123,7 +123,7 @@
             // 
             this.textBoxGeorgianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxGeorgianWord.Location = new System.Drawing.Point(32, 466);
-            this.textBoxGeorgianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxGeorgianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxGeorgianWord.Name = "textBoxGeorgianWord";
             this.textBoxGeorgianWord.Size = new System.Drawing.Size(393, 32);
             this.textBoxGeorgianWord.TabIndex = 58;
@@ -132,7 +132,7 @@
             // 
             this.textBoxArmenianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxArmenianWord.Location = new System.Drawing.Point(32, 353);
-            this.textBoxArmenianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxArmenianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxArmenianWord.Name = "textBoxArmenianWord";
             this.textBoxArmenianWord.Size = new System.Drawing.Size(393, 32);
             this.textBoxArmenianWord.TabIndex = 57;
@@ -141,7 +141,7 @@
             // 
             this.textBoxOssetianWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxOssetianWord.Location = new System.Drawing.Point(32, 250);
-            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxOssetianWord.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxOssetianWord.Name = "textBoxOssetianWord";
             this.textBoxOssetianWord.Size = new System.Drawing.Size(393, 32);
             this.textBoxOssetianWord.TabIndex = 56;
@@ -183,7 +183,7 @@
             // 
             this.textBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBoxThemes.Location = new System.Drawing.Point(770, 353);
-            this.textBoxThemes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxThemes.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxThemes.Name = "textBoxThemes";
             this.textBoxThemes.Size = new System.Drawing.Size(350, 35);
             this.textBoxThemes.TabIndex = 71;
@@ -222,38 +222,22 @@
             this.label7.TabIndex = 68;
             this.label7.Text = "Выберите тематику в которую хотите поместить свою карточку";
             // 
-            // comboBoxThemes
+            // comboBoxInnerThemes
             // 
-            this.comboBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.comboBoxThemes.FormattingEnabled = true;
-            this.comboBoxThemes.Items.AddRange(new object[] {
-            "Дикие животные",
-            "Домашние животные",
-            "Птицы",
-            "Морские обитатели",
-            "Насекомые",
-            "Фрукты и ягоды ",
-            "Овощи",
-            "Посуда, мебель и Бытовая техника",
-            "Цветы и деревья",
-            "Транспорт",
-            "Строительные инструменты",
-            "Музыкальные инструменты",
-            "Одежда",
-            "Профессии",
-            "Продукты"});
-            this.comboBoxThemes.Location = new System.Drawing.Point(770, 132);
-            this.comboBoxThemes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBoxThemes.Name = "comboBoxThemes";
-            this.comboBoxThemes.Size = new System.Drawing.Size(350, 37);
-            this.comboBoxThemes.TabIndex = 67;
+            this.comboBoxInnerThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.comboBoxInnerThemes.FormattingEnabled = true;
+            this.comboBoxInnerThemes.Location = new System.Drawing.Point(770, 132);
+            this.comboBoxInnerThemes.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxInnerThemes.Name = "comboBoxInnerThemes";
+            this.comboBoxInnerThemes.Size = new System.Drawing.Size(350, 37);
+            this.comboBoxInnerThemes.TabIndex = 67;
             // 
             // pictureBoxMainPicture
             // 
             this.pictureBoxMainPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxMainPicture.BackColor = System.Drawing.Color.White;
             this.pictureBoxMainPicture.Location = new System.Drawing.Point(489, 46);
-            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBoxMainPicture.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBoxMainPicture.Name = "pictureBoxMainPicture";
             this.pictureBoxMainPicture.Size = new System.Drawing.Size(188, 203);
             this.pictureBoxMainPicture.TabIndex = 66;
@@ -281,7 +265,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBoxThemes);
+            this.Controls.Add(this.comboBoxInnerThemes);
             this.Controls.Add(this.pictureBoxMainPicture);
             this.Controls.Add(this.buttonSelection);
             this.Controls.Add(this.label1);
@@ -295,10 +279,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEditorGameTrain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "РЕДАКТОР ИГРЫ \"ПОЕЗД\"";
+            this.Load += new System.EventHandler(this.FormEditorGameTrain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -322,7 +307,7 @@ private System.Windows.Forms.Button buttonSelection;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBoxThemes;
+        private System.Windows.Forms.ComboBox comboBoxInnerThemes;
         public System.Windows.Forms.PictureBox pictureBoxMainPicture;
         private System.Windows.Forms.Button buttonErasor;
     }

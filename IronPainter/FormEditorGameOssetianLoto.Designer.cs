@@ -46,7 +46,7 @@
             this.panelBracket = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonErasor = new System.Windows.Forms.Button();
-            this.comboBoxThemes = new System.Windows.Forms.ComboBox();
+            this.comboBoxInnerThemes = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -269,31 +269,15 @@
             this.buttonErasor.UseVisualStyleBackColor = true;
             this.buttonErasor.Click += new System.EventHandler(this.buttonErasor_Click);
             // 
-            // comboBoxThemes
+            // comboBoxInnerThemes
             // 
-            this.comboBoxThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.comboBoxThemes.FormattingEnabled = true;
-            this.comboBoxThemes.Items.AddRange(new object[] {
-            "Дикие животные",
-            "Домашние животные",
-            "Птицы",
-            "Морские обитатели",
-            "Насекомые",
-            "Фрукты и ягоды ",
-            "Овощи",
-            "Посуда, мебель и Бытовая техника",
-            "Цветы и деревья",
-            "Транспорт",
-            "Строительные инструменты",
-            "Музыкальные инструменты",
-            "Одежда",
-            "Профессии",
-            "Продукты"});
-            this.comboBoxThemes.Location = new System.Drawing.Point(9, 474);
-            this.comboBoxThemes.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxThemes.Name = "comboBoxThemes";
-            this.comboBoxThemes.Size = new System.Drawing.Size(405, 37);
-            this.comboBoxThemes.TabIndex = 48;
+            this.comboBoxInnerThemes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.comboBoxInnerThemes.FormattingEnabled = true;
+            this.comboBoxInnerThemes.Location = new System.Drawing.Point(9, 474);
+            this.comboBoxInnerThemes.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxInnerThemes.Name = "comboBoxInnerThemes";
+            this.comboBoxInnerThemes.Size = new System.Drawing.Size(405, 37);
+            this.comboBoxInnerThemes.TabIndex = 48;
             // 
             // label3
             // 
@@ -347,7 +331,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBoxThemes);
+            this.Controls.Add(this.comboBoxInnerThemes);
             this.Controls.Add(this.buttonErasor);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonReturnToMenu);
@@ -363,6 +347,7 @@
             this.Name = "FormEditorGameOssetianLoto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "РЕДАКТОР ИГРЫ \"ОСЕТИНКОЕ ЛОТО\"";
+            this.Load += new System.EventHandler(this.FormEditorGameOssetianLoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMainPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetian)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussian)).EndInit();
@@ -393,7 +378,7 @@
         private System.Windows.Forms.Panel panelBracket;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonErasor;
-        private System.Windows.Forms.ComboBox comboBoxThemes;
+        private System.Windows.Forms.ComboBox comboBoxInnerThemes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

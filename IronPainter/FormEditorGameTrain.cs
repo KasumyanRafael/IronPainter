@@ -76,5 +76,11 @@ namespace IronPainter
             pictureBoxMainPicture.Image=null;
             buttonResult.Enabled = false;
         }
+
+        private void FormEditorGameTrain_Load(object sender, EventArgs e)
+        {
+            string[] items = Properties.Resources.inner_categories.Split('\n');
+            comboBoxInnerThemes.Items.AddRange(items);
+        }
     }
 }

@@ -17,9 +17,9 @@ namespace IronPainter
         {
             InitializeComponent();
         }
-
         private void buttonEditorGameTrain_Click(object sender, EventArgs e)
         {
+            string[]categories= Properties.Resources.inner_categories.Split('\n'); 
             CreateFile("trainPictureId.txt");
             FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
             this.Hide();
@@ -28,6 +28,7 @@ namespace IronPainter
 
         private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
         {
+            string[] categories = Properties.Resources.inner_categories.Split('\n');
             CreateFile("lotoPictureId.txt");
             FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
             this.Hide();
@@ -46,6 +47,11 @@ namespace IronPainter
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        public Dictionary<int,string> CreateHashOfCats(string[]array)
+        {
+            Dictionary<int,string>hash= new Dictionary<int,string>();
+            return hash;
         }
     }
 }

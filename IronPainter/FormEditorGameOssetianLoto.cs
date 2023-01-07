@@ -26,9 +26,6 @@ namespace IronPainter
             this.font = new PrivateFontCollection();
             this.font.AddFontFile("font/BureauAP.ttf");
         }
-        private void FormEditorGameOssetianLoto_Load(object sender, EventArgs e)
-        {
-        }
 
         private void buttonSelection_Click(object sender, EventArgs e)
         {
@@ -108,19 +105,24 @@ namespace IronPainter
 
         private void buttonSaveResult_Click(object sender, EventArgs e)
         {
-            StreamReader file = new StreamReader("lotoPictureId.txt");
-            int cardId=Convert.ToInt32(file.ReadLine());
-            file.Close();
-            PictureBox[] pictures = { pictureBoxMainPicture,pictureBoxRussian,pictureBoxOssetian,pictureBoxWordWithoutImage };
-            SaveImages(pictures,cardId);
-            cardId++;
-            StreamWriter thisfile = new StreamWriter("lotoPictureId.txt");
-            thisfile.WriteLine(cardId);
-            thisfile.Close();
-            MessageBox.Show("Всё успешно сохранено!");
-            FormMenu form=new FormMenu();
-            form.Show();
-            this.Hide();
+            string category=comboBoxInnerThemes.Text;
+            if (category == String.Empty) MessageBox.Show("Выберите категорию");
+            else
+            {
+                StreamReader file = new StreamReader("lotoPictureId.txt");
+                int cardId = Convert.ToInt32(file.ReadLine());
+                file.Close();
+                PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
+                SaveImages(pictures, cardId);
+                cardId++;
+                StreamWriter thisfile = new StreamWriter("lotoPictureId.txt");
+                thisfile.WriteLine(cardId);
+                thisfile.Close();
+                MessageBox.Show("Всё успешно сохранено!");
+                FormMenu form = new FormMenu();
+                form.Show();
+                this.Hide();
+            }            
         }
         public void SaveImages(PictureBox[] pictures,int num)
         {
@@ -131,6 +133,12 @@ namespace IronPainter
                 filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }
+        }
+
+        private void FormEditorGameOssetianLoto_Load(object sender, EventArgs e)
+        {
+            string[] items = Properties.Resources.inner_categories.Split('\n');
+            comboBoxInnerThemes.Items.AddRange(items);
         }
     }
 }

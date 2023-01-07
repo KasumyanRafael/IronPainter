@@ -71,6 +71,29 @@ namespace IronPainter.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Дикие животные
+        ///Домашние животные
+        ///Птицы
+        ///Морские обитатели
+        ///Насекомые
+        ///Фрукты и ягоды 
+        ///Овощи
+        ///Посуда, мебель и Бытовая техника
+        ///Цветы и деревья
+        ///Транспорт
+        ///Строительные инструменты
+        ///Музыкальные инструменты
+        ///Одежда
+        ///Профессии
+        ///Продукты.
+        /// </summary>
+        internal static string inner_categories {
+            get {
+                return ResourceManager.GetString("inner_categories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap pwhite {
