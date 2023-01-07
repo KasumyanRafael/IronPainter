@@ -79,7 +79,7 @@
             this.buttonExit.TabIndex = 3;
             this.buttonExit.Text = "ВЫХОД";
             this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.button1_Click);
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormMenu
             // 

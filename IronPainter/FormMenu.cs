@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace IronPainter
 {
@@ -19,6 +20,7 @@ namespace IronPainter
 
         private void buttonEditorGameTrain_Click(object sender, EventArgs e)
         {
+            CreateFile("trainCatId.txt");
             FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
             this.Hide();
             formEditorGameTrain.Show();
@@ -26,12 +28,22 @@ namespace IronPainter
 
         private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
         {
+            CreateFile("lotoCatId.txt");
             FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
             this.Hide();
             formEditorGameOssetianLoto.Show();
         }
+        public void CreateFile(string path)
+        {
+            if (!File.Exists(path))
+            {
+                StreamWriter file = new StreamWriter(path);
+                file.WriteLine("0");
+                file.Close();
+            }
+        }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
