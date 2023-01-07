@@ -13,26 +13,31 @@ namespace IronPainter
 {
     public partial class FormMenu : Form
     {
+        public Dictionary<string,int> hash = new Dictionary<string,int>();  
         public FormMenu()
         {
             InitializeComponent();
         }
         private void buttonEditorGameTrain_Click(object sender, EventArgs e)
         {
-            string[]categories= Properties.Resources.inner_categories.Split('\n'); 
+            string[]categories= Properties.Resources.inner_categories.Split('\n');
+            hash=CreateHashOfCats(categories);
             CreateFile("trainPictureId.txt");
             FormEditorGameTrain formEditorGameTrain = new FormEditorGameTrain();
-            this.Hide();
+            formEditorGameTrain.categories = hash;
             formEditorGameTrain.Show();
+            this.Hide();
         }
 
         private void buttonEditorGameOssetianLoto_Click(object sender, EventArgs e)
         {
             string[] categories = Properties.Resources.inner_categories.Split('\n');
+            hash = CreateHashOfCats(categories);
             CreateFile("lotoPictureId.txt");
             FormEditorGameOssetianLoto formEditorGameOssetianLoto = new FormEditorGameOssetianLoto();
-            this.Hide();
+            formEditorGameOssetianLoto.categories = hash;
             formEditorGameOssetianLoto.Show();
+            this.Hide();
         }
         public void CreateFile(string path)
         {
@@ -48,9 +53,13 @@ namespace IronPainter
         {
             Application.Exit();
         }
-        public Dictionary<int,string> CreateHashOfCats(string[]array)
+        public Dictionary<string,int> CreateHashOfCats(string[]array)
         {
-            Dictionary<int,string>hash= new Dictionary<int,string>();
+            Dictionary<string,int> hash = new Dictionary<string,int>();
+            for (int i = 0; i < array.Length; i++)
+            {
+                hash[array[i]]=i;
+            }
             return hash;
         }
     }

@@ -14,6 +14,7 @@ namespace IronPainter
     public partial class FormEditorGameTrain : Form
     {
         OpenFileDialog ofd;
+        public Dictionary<string,int> categories = new Dictionary<string,int>();
         public string[] signs = new string[4];
         public FormEditorGameTrain()
         {

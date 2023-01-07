@@ -15,6 +15,7 @@ namespace IronPainter
     public partial class FormEditorGameOssetianLoto : Form
     {
         OpenFileDialog ofd;
+        public Dictionary<string,int>categories=new Dictionary<string,int>();
         public FormEditorGameOssetianLoto()
         {
             InitializeComponent();
@@ -113,7 +114,7 @@ namespace IronPainter
                 int cardId = Convert.ToInt32(file.ReadLine());
                 file.Close();
                 PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
-                SaveImages(pictures, cardId);
+                SaveImages(pictures, cardId,categories[category]);
                 cardId++;
                 StreamWriter thisfile = new StreamWriter("lotoPictureId.txt");
                 thisfile.WriteLine(cardId);
@@ -124,12 +125,21 @@ namespace IronPainter
                 this.Hide();
             }            
         }
-        public void SaveImages(PictureBox[] pictures,int num)
+        public void SaveImages(PictureBox[] pictures,int num,int category)
         {
             List<string>filenames = new List<string>();
+            string numberOfCategory;
             for (int i = 0; i < pictures.Length; i++)
             {
-                string filename = String.Format("p{0}type{1}Loto.bmp",num,i);
+                if(category<10)
+                {
+                    numberOfCategory = String.Format("0{0}",category);
+                }
+                else
+                {
+                    numberOfCategory=category.ToString();
+                }
+                string filename = String.Format("p{0}type{1}cat{2}Loto.bmp",num,i,numberOfCategory);
                 filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }
