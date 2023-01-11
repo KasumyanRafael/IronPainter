@@ -20,14 +20,6 @@ namespace IronPainter
         {
             InitializeComponent();
         }
-        PrivateFontCollection font;
-        public void fontsProjects()
-        {
-            //Добавляем шрифт из указанного файла в em.Drawing.Text.PrivateFontCollection
-            this.font = new PrivateFontCollection();
-            this.font.AddFontFile("font/BureauAP.ttf");
-        }
-
         private void buttonSelection_Click(object sender, EventArgs e)
         {
             ofd = new OpenFileDialog();
@@ -114,7 +106,8 @@ namespace IronPainter
                 int cardId = Convert.ToInt32(file.ReadLine());
                 file.Close();
                 PictureBox[] pictures = { pictureBoxMainPicture, pictureBoxRussian, pictureBoxOssetian, pictureBoxWordWithoutImage };
-                SaveImages(pictures, cardId,categories[category]);
+                TextBox[] words = { textBoxRussianWord, textBoxOssetianWord };
+                SaveImages(pictures, cardId,categories[category],words);
                 cardId++;
                 StreamWriter thisfile = new StreamWriter("lotoPictureId.txt");
                 thisfile.WriteLine(cardId);
@@ -125,7 +118,7 @@ namespace IronPainter
                 this.Hide();
             }            
         }
-        public void SaveImages(PictureBox[] pictures,int num,int category)
+        public void SaveImages(PictureBox[] pictures,int num,int category,TextBox[]words)
         {
             List<string>filenames = new List<string>();
             string numberOfCategory;
@@ -143,6 +136,12 @@ namespace IronPainter
                 filenames.Add(filename);
                 pictures[i].Image.Save(filename);
             }
+            StreamWriter file = new StreamWriter(String.Format("p{0}words.txt", num));
+            for (int i = 0; i < words.Length; i++)
+            {
+                file.WriteLine(words[i].Text);
+            }
+            file.Close();
         }
 
         private void FormEditorGameOssetianLoto_Load(object sender, EventArgs e)
