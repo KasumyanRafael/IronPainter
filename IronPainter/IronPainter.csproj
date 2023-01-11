@@ -109,13 +109,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FilledWagon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pwhite.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\inner_categories.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilledWagon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
