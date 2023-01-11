@@ -20,13 +20,6 @@ namespace IronPainter
         {
             InitializeComponent();
         }
-        PrivateFontCollection font;
-        public void fontsProjects()
-        {
-            //Добавляем шрифт из указанного файла в em.Drawing.Text.PrivateFontCollection
-            this.font = new PrivateFontCollection();
-            this.font.AddFontFile("font/BureauAP.ttf");
-        }
 
         private void buttonSelection_Click(object sender, EventArgs e)
         {
