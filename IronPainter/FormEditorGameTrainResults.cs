@@ -25,8 +25,8 @@ namespace IronPainter
             Image image = Properties.Resources.FilledWagon;
             Graphics gr = Graphics.FromImage(image);
             gr.DrawString(output,
-            new System.Drawing.Font("BureauAP", 76, FontStyle.Bold),
-            new SolidBrush(Color.White), new RectangleF(370, 250, 1100, 340),
+            new System.Drawing.Font("BureauAP", 24, FontStyle.Bold),
+            new SolidBrush(Color.White), new RectangleF(80, 60, 200, 340),
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
