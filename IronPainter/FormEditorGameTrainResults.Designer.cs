@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonReturnToMenu = new System.Windows.Forms.Button();
-            this.buttonSaveResult = new System.Windows.Forms.Button();
-            this.buttonResult = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -42,6 +38,10 @@
             this.pictureBoxRussianTrain = new System.Windows.Forms.PictureBox();
             this.pictureBoxGeorgianTrain = new System.Windows.Forms.PictureBox();
             this.pictureBoxArmenianTrain = new System.Windows.Forms.PictureBox();
+            this.buttonReturnToMenu = new System.Windows.Forms.Button();
+            this.buttonSaveResult = new System.Windows.Forms.Button();
+            this.buttonResult = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxMain = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,12 +52,12 @@
             this.pictureBoxRussian = new System.Windows.Forms.PictureBox();
             this.pictureBoxGeorgian = new System.Windows.Forms.PictureBox();
             this.pictureBoxArmenian = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetianTrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussianTrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgianTrain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenianTrain)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetian)).BeginInit();
@@ -70,67 +70,14 @@
             // 
             this.buttonExit.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonExit.Location = new System.Drawing.Point(71, 339);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExit.Location = new System.Drawing.Point(75, 367);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(322, 84);
             this.buttonExit.TabIndex = 59;
             this.buttonExit.Text = "ВЫХОД";
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
-            // buttonReturnToMenu
-            // 
-            this.buttonReturnToMenu.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonReturnToMenu.Enabled = false;
-            this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonReturnToMenu.Location = new System.Drawing.Point(71, 15);
-            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonReturnToMenu.Name = "buttonReturnToMenu";
-            this.buttonReturnToMenu.Size = new System.Drawing.Size(322, 84);
-            this.buttonReturnToMenu.TabIndex = 57;
-            this.buttonReturnToMenu.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
-            this.buttonReturnToMenu.UseVisualStyleBackColor = true;
-            this.buttonReturnToMenu.Click += new System.EventHandler(this.buttonReturnToMenu_Click);
-            // 
-            // buttonSaveResult
-            // 
-            this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonSaveResult.Enabled = false;
-            this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonSaveResult.Location = new System.Drawing.Point(71, 232);
-            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonSaveResult.Name = "buttonSaveResult";
-            this.buttonSaveResult.Size = new System.Drawing.Size(322, 84);
-            this.buttonSaveResult.TabIndex = 56;
-            this.buttonSaveResult.Text = "СОХРАНИТЬ РЕЗУЛЬТАТ";
-            this.buttonSaveResult.UseVisualStyleBackColor = true;
-            this.buttonSaveResult.Click += new System.EventHandler(this.buttonSaveResult_Click);
-            // 
-            // buttonResult
-            // 
-            this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
-            this.buttonResult.Location = new System.Drawing.Point(71, 123);
-            this.buttonResult.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonResult.Name = "buttonResult";
-            this.buttonResult.Size = new System.Drawing.Size(322, 84);
-            this.buttonResult.TabIndex = 55;
-            this.buttonResult.Text = "ПОСМОТРЕТЬ РЕЗУЛЬТАТ";
-            this.buttonResult.UseVisualStyleBackColor = true;
-            this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.panel3.Controls.Add(this.buttonExit);
-            this.panel3.Controls.Add(this.buttonReturnToMenu);
-            this.panel3.Controls.Add(this.buttonResult);
-            this.panel3.Controls.Add(this.buttonSaveResult);
-            this.panel3.Location = new System.Drawing.Point(884, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(435, 474);
-            this.panel3.TabIndex = 60;
             // 
             // panel2
             // 
@@ -142,10 +89,10 @@
             this.panel2.Controls.Add(this.pictureBoxRussianTrain);
             this.panel2.Controls.Add(this.pictureBoxGeorgianTrain);
             this.panel2.Controls.Add(this.pictureBoxArmenianTrain);
-            this.panel2.Location = new System.Drawing.Point(21, 12);
+            this.panel2.Location = new System.Drawing.Point(37, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 474);
-            this.panel2.TabIndex = 60;
+            this.panel2.TabIndex = 54;
             // 
             // label9
             // 
@@ -200,7 +147,7 @@
             this.pictureBoxOssetianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxOssetianTrain.Location = new System.Drawing.Point(428, 15);
-            this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxOssetianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxOssetianTrain.Name = "pictureBoxOssetianTrain";
             this.pictureBoxOssetianTrain.Size = new System.Drawing.Size(302, 154);
             this.pictureBoxOssetianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -211,7 +158,7 @@
             // 
             this.pictureBoxRussianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxRussianTrain.Location = new System.Drawing.Point(28, 15);
-            this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxRussianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxRussianTrain.Name = "pictureBoxRussianTrain";
             this.pictureBoxRussianTrain.Size = new System.Drawing.Size(302, 154);
             this.pictureBoxRussianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -223,7 +170,7 @@
             this.pictureBoxGeorgianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxGeorgianTrain.Location = new System.Drawing.Point(428, 258);
-            this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxGeorgianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxGeorgianTrain.Name = "pictureBoxGeorgianTrain";
             this.pictureBoxGeorgianTrain.Size = new System.Drawing.Size(302, 154);
             this.pictureBoxGeorgianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,12 +182,64 @@
             this.pictureBoxArmenianTrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenianTrain.BackColor = System.Drawing.Color.White;
             this.pictureBoxArmenianTrain.Location = new System.Drawing.Point(28, 258);
-            this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxArmenianTrain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxArmenianTrain.Name = "pictureBoxArmenianTrain";
             this.pictureBoxArmenianTrain.Size = new System.Drawing.Size(302, 154);
             this.pictureBoxArmenianTrain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxArmenianTrain.TabIndex = 34;
             this.pictureBoxArmenianTrain.TabStop = false;
+            // 
+            // buttonReturnToMenu
+            // 
+            this.buttonReturnToMenu.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonReturnToMenu.Enabled = false;
+            this.buttonReturnToMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonReturnToMenu.Location = new System.Drawing.Point(75, 15);
+            this.buttonReturnToMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonReturnToMenu.Name = "buttonReturnToMenu";
+            this.buttonReturnToMenu.Size = new System.Drawing.Size(322, 84);
+            this.buttonReturnToMenu.TabIndex = 57;
+            this.buttonReturnToMenu.Text = "СБРОСИТЬ РЕЗУЛЬТАТ";
+            this.buttonReturnToMenu.UseVisualStyleBackColor = true;
+            this.buttonReturnToMenu.Click += new System.EventHandler(this.buttonReturnToMenu_Click);
+            // 
+            // buttonSaveResult
+            // 
+            this.buttonSaveResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonSaveResult.Enabled = false;
+            this.buttonSaveResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonSaveResult.Location = new System.Drawing.Point(75, 250);
+            this.buttonSaveResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSaveResult.Name = "buttonSaveResult";
+            this.buttonSaveResult.Size = new System.Drawing.Size(322, 84);
+            this.buttonSaveResult.TabIndex = 56;
+            this.buttonSaveResult.Text = "СОХРАНИТЬ РЕЗУЛЬТАТ";
+            this.buttonSaveResult.UseVisualStyleBackColor = true;
+            this.buttonSaveResult.Click += new System.EventHandler(this.buttonSaveResult_Click);
+            // 
+            // buttonResult
+            // 
+            this.buttonResult.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.buttonResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonResult.Location = new System.Drawing.Point(75, 132);
+            this.buttonResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResult.Name = "buttonResult";
+            this.buttonResult.Size = new System.Drawing.Size(322, 84);
+            this.buttonResult.TabIndex = 55;
+            this.buttonResult.Text = "ПОСМОТРЕТЬ РЕЗУЛЬТАТ";
+            this.buttonResult.UseVisualStyleBackColor = true;
+            this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.buttonExit);
+            this.panel3.Controls.Add(this.buttonReturnToMenu);
+            this.panel3.Controls.Add(this.buttonResult);
+            this.panel3.Controls.Add(this.buttonSaveResult);
+            this.panel3.Location = new System.Drawing.Point(896, 11);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(439, 474);
+            this.panel3.TabIndex = 60;
             // 
             // panel1
             // 
@@ -253,17 +252,17 @@
             this.panel1.Controls.Add(this.pictureBoxRussian);
             this.panel1.Controls.Add(this.pictureBoxGeorgian);
             this.panel1.Controls.Add(this.pictureBoxArmenian);
-            this.panel1.Location = new System.Drawing.Point(21, 516);
+            this.panel1.Location = new System.Drawing.Point(37, 509);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1298, 267);
-            this.panel1.TabIndex = 62;
+            this.panel1.TabIndex = 61;
             // 
             // pictureBoxMain
             // 
             this.pictureBoxMain.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxMain.BackColor = System.Drawing.Color.White;
             this.pictureBoxMain.Location = new System.Drawing.Point(28, 8);
-            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxMain.Name = "pictureBoxMain";
             this.pictureBoxMain.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -323,7 +322,7 @@
             this.pictureBoxOssetian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxOssetian.BackColor = System.Drawing.Color.White;
             this.pictureBoxOssetian.Location = new System.Drawing.Point(542, 8);
-            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxOssetian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxOssetian.Name = "pictureBoxOssetian";
             this.pictureBoxOssetian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxOssetian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -335,7 +334,7 @@
             this.pictureBoxRussian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxRussian.BackColor = System.Drawing.Color.White;
             this.pictureBoxRussian.Location = new System.Drawing.Point(279, 8);
-            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxRussian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxRussian.Name = "pictureBoxRussian";
             this.pictureBoxRussian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxRussian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,7 +346,7 @@
             this.pictureBoxGeorgian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxGeorgian.BackColor = System.Drawing.Color.White;
             this.pictureBoxGeorgian.Location = new System.Drawing.Point(1068, 8);
-            this.pictureBoxGeorgian.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxGeorgian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxGeorgian.Name = "pictureBoxGeorgian";
             this.pictureBoxGeorgian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxGeorgian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -359,7 +358,7 @@
             this.pictureBoxArmenian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxArmenian.BackColor = System.Drawing.Color.White;
             this.pictureBoxArmenian.Location = new System.Drawing.Point(804, 8);
-            this.pictureBoxArmenian.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxArmenian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBoxArmenian.Name = "pictureBoxArmenian";
             this.pictureBoxArmenian.Size = new System.Drawing.Size(188, 211);
             this.pictureBoxArmenian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -377,13 +376,13 @@
             this.Name = "FormEditorGameTrainResults";
             this.Text = "FormEditorGameTrainResults";
             this.Load += new System.EventHandler(this.FormEditorGameTrainResults_Load);
-            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOssetianTrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRussianTrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGeorgianTrain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxArmenianTrain)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMain)).EndInit();
@@ -397,11 +396,7 @@
 
         #endregion
 
- private System.Windows.Forms.Button buttonExit;
- private System.Windows.Forms.Button buttonReturnToMenu;
-        private System.Windows.Forms.Button buttonSaveResult;
-        private System.Windows.Forms.Button buttonResult;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -411,6 +406,10 @@
         private System.Windows.Forms.PictureBox pictureBoxRussianTrain;
         private System.Windows.Forms.PictureBox pictureBoxGeorgianTrain;
         private System.Windows.Forms.PictureBox pictureBoxArmenianTrain;
+        private System.Windows.Forms.Button buttonReturnToMenu;
+        private System.Windows.Forms.Button buttonSaveResult;
+        private System.Windows.Forms.Button buttonResult;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxMain;
         private System.Windows.Forms.Label label1;
