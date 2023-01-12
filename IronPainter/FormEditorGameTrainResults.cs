@@ -41,7 +41,6 @@ namespace IronPainter
             new StringFormat(StringFormatFlags.NoWrap));
             input.Image = image;
         }
-
         private void buttonReturnToMenu_Click(object sender, EventArgs e)
         {
             FormEditorGameTrain frm=new FormEditorGameTrain();
