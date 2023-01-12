@@ -396,7 +396,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonExit;
+ private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -406,7 +406,7 @@
         private System.Windows.Forms.PictureBox pictureBoxRussianTrain;
         private System.Windows.Forms.PictureBox pictureBoxGeorgianTrain;
         private System.Windows.Forms.PictureBox pictureBoxArmenianTrain;
-        private System.Windows.Forms.Button buttonReturnToMenu;
+ private System.Windows.Forms.Button buttonReturnToMenu;
         private System.Windows.Forms.Button buttonSaveResult;
         private System.Windows.Forms.Button buttonResult;
         private System.Windows.Forms.Panel panel3;
