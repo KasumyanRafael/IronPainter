@@ -24,12 +24,15 @@ namespace IronPainter
         private void buttonSelection_Click(object sender, EventArgs e)
         {
             ofd = new OpenFileDialog();
+            Bitmap bmp;
             ofd.Filter = "Image Files(*.BMP; *.JPG;*.PNG)|*.BMP;*.JPG;*PNG";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    pictureBoxMainPicture.Image = new Bitmap(ofd.FileName);
+                    bmp = new Bitmap(ofd.FileName);
+                    Bitmap bitmap = new Bitmap(bmp, new Size(195, 211)); //теперь редактор будет сам регулировать размеры картинок
+                    pictureBoxMainPicture.Image = new Bitmap(bitmap);
                 }
                 catch
                 {
